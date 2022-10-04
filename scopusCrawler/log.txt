@@ -1,0 +1,1795 @@
+2022-10-04 10:59:19 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scopusScrawler)
+2022-10-04 10:59:19 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.9.2 (default, Feb 28 2021, 17:03:44) - [GCC 10.2.1 20210110], pyOpenSSL 20.0.1 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 3.3.2, Platform Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.31
+2022-10-04 10:59:19 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scopusScrawler',
+ 'LOG_FILE': 'log.txt',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scopusScrawler.spiders',
+ 'RETRY_TIMES': 20,
+ 'SPIDER_MODULES': ['scopusScrawler.spiders']}
+2022-10-04 10:59:20 [scrapy.extensions.telnet] INFO: Telnet Password: d5cddac954f9f2fa
+2022-10-04 10:59:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-04 10:59:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-04 10:59:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-04 10:59:23 [scrapy.middleware] INFO: Enabled item pipelines:
+['scopusScrawler.pipelines.ScopusscrawlerPipeline',
+ 'random_useragent.RandomUserAgentMiddleware']
+2022-10-04 10:59:23 [scrapy.core.engine] INFO: Spider opened
+2022-10-04 10:59:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-04 10:59:23 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-04 10:59:25 [scopus_api] INFO: start total result 213811 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=all&date=2022
+2022-10-04 10:59:25 [scopus_api] INFO: parse_access
+2022-10-04 10:59:26 [scopus_api] INFO: start total result 0 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+bz+%29&date=2022
+2022-10-04 10:59:26 [scopus_api] INFO: start total result 22 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+tb+%29&date=2022
+2022-10-04 10:59:26 [scopus_api] INFO: parse_startttttt 22 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+tb+%29&date=2022
+2022-10-04 10:59:26 [scopus_api] INFO: 22
+2022-10-04 10:59:26 [scopus_api] INFO: articles_count 22
+2022-10-04 10:59:27 [scopus_api] INFO: start total result 0 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+rp+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: start total result 0 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ab+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: start total result 106 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+dp+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: parse_startttttt 106 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+dp+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: 128
+2022-10-04 10:59:27 [scopus_api] INFO: articles_count 47
+2022-10-04 10:59:27 [scopus_api] INFO: start total result 10 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+cr+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: parse_startttttt 10 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+cr+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: 138
+2022-10-04 10:59:27 [scopus_api] INFO: articles_count 57
+2022-10-04 10:59:27 [scopus_api] INFO: start total result 1758 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ed+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: parse_startttttt 1758 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ed+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: 1896
+2022-10-04 10:59:27 [scopus_api] INFO: articles_count 82
+2022-10-04 10:59:27 [scopus_api] INFO: start total result 1832 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+er+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: parse_startttttt 1832 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+er+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: 3728
+2022-10-04 10:59:27 [scopus_api] INFO: articles_count 107
+2022-10-04 10:59:27 [scopus_api] INFO: start total result 465 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+sh+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: parse_startttttt 465 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+sh+%29&date=2022
+2022-10-04 10:59:27 [scopus_api] INFO: 4193
+2022-10-04 10:59:27 [scopus_api] INFO: articles_count 132
+2022-10-04 10:59:28 [scopus_api] INFO: start total result 168 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+bk+%29&date=2022
+2022-10-04 10:59:28 [scopus_api] INFO: parse_startttttt 168 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+bk+%29&date=2022
+2022-10-04 10:59:28 [scopus_api] INFO: 4361
+2022-10-04 10:59:28 [scopus_api] INFO: articles_count 157
+2022-10-04 10:59:28 [scopus_api] INFO: 4361
+2022-10-04 10:59:29 [scopus_api] INFO: start total result 2111 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ch+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: parse_startttttt 2111 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ch+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: 6472
+2022-10-04 10:59:29 [scopus_api] INFO: articles_count 182
+2022-10-04 10:59:29 [scopus_api] INFO: start total result 2749 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+no+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: parse_startttttt 2749 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+no+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: 9221
+2022-10-04 10:59:29 [scopus_api] INFO: articles_count 207
+2022-10-04 10:59:29 [scopus_api] INFO: start total result 746 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+le+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: parse_startttttt 746 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+le+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: 9967
+2022-10-04 10:59:29 [scopus_api] INFO: articles_count 232
+2022-10-04 10:59:29 [scopus_api] INFO: start total result 15004 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: start total result 2281 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+cp+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: parse_startttttt 2281 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+cp+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: 12248
+2022-10-04 10:59:29 [scopus_api] INFO: articles_count 257
+2022-10-04 10:59:29 [scopus_api] INFO: start total result 186559 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29&date=2022
+2022-10-04 10:59:29 [scopus_api] INFO: 12248
+2022-10-04 10:59:30 [scopus_api] INFO: 12248
+2022-10-04 10:59:30 [scopus_api] INFO: 12248
+2022-10-04 10:59:30 [scopus_api] INFO: 12248
+2022-10-04 10:59:30 [scopus_api] INFO: 12248
+2022-10-04 10:59:30 [scopus_api] INFO: afff total result 186559 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29&date=2022&sort=citedby-count&start=50
+2022-10-04 10:59:30 [scopus_api] INFO: citedby_count 24
+2022-10-04 10:59:30 [scopus_api] INFO: articles_count 282
+2022-10-04 10:59:31 [scopus_api] INFO: 12248
+2022-10-04 10:59:31 [scopus_api] INFO: articles_count 307
+2022-10-04 10:59:31 [scopus_api] INFO: 12248
+2022-10-04 10:59:31 [scopus_api] INFO: articles_count 332
+2022-10-04 10:59:31 [scopus_api] INFO: articles_count 357
+2022-10-04 10:59:31 [scopus_api] INFO: 12248
+2022-10-04 10:59:31 [scopus_api] INFO: afff total result 15004 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29&date=2022&sort=citedby-count&start=50
+2022-10-04 10:59:31 [scopus_api] INFO: citedby_count 22
+2022-10-04 10:59:31 [scopus_api] INFO: articles_count 375
+2022-10-04 10:59:31 [scopus_api] INFO: 12248
+2022-10-04 10:59:32 [scopus_api] INFO: 12248
+2022-10-04 10:59:32 [scopus_api] INFO: articles_count 400
+2022-10-04 10:59:32 [scopus_api] INFO: articles_count 415
+2022-10-04 10:59:32 [scopus_api] INFO: articles_count 440
+2022-10-04 10:59:32 [scopus_api] INFO: articles_count 465
+2022-10-04 10:59:32 [scopus_api] INFO: articles_count 490
+2022-10-04 10:59:33 [scopus_api] INFO: articles_count 515
+2022-10-04 10:59:33 [scopus_api] INFO: articles_count 540
+2022-10-04 10:59:33 [scopus_api] INFO: articles_count 565
+2022-10-04 10:59:33 [scopus_api] INFO: articles_count 590
+2022-10-04 10:59:33 [scopus_api] INFO: articles_count 615
+2022-10-04 10:59:33 [scopus_api] INFO: articles_count 640
+2022-10-04 10:59:34 [scopus_api] INFO: articles_count 665
+2022-10-04 10:59:34 [scopus_api] INFO: articles_count 672
+2022-10-04 10:59:34 [scopus_api] INFO: articles_count 697
+2022-10-04 10:59:34 [scopus_api] INFO: articles_count 722
+2022-10-04 10:59:34 [scopus_api] INFO: articles_count 733
+2022-10-04 10:59:34 [scopus_api] INFO: articles_count 739
+2022-10-04 10:59:34 [scopus_api] INFO: articles_count 764
+2022-10-04 10:59:34 [scopus_api] INFO: afff total result 708 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+7+OR+8+OR+9+OR+10+OR+11+OR+12+OR+13+OR+14+OR+15+OR+16+OR+17+OR+18+OR+19+OR+20+OR+21+OR+22%29&date=2022
+2022-10-04 10:59:34 [scopus_api] INFO: parse_startttttt 708 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+7+OR+8+OR+9+OR+10+OR+11+OR+12+OR+13+OR+14+OR+15+OR+16+OR+17+OR+18+OR+19+OR+20+OR+21+OR+22%29&date=2022
+2022-10-04 10:59:34 [scopus_api] INFO: 12956
+2022-10-04 10:59:34 [scopus_api] INFO: articles_count 789
+2022-10-04 10:59:35 [scopus_api] INFO: articles_count 814
+2022-10-04 10:59:35 [scopus_api] INFO: articles_count 839
+2022-10-04 10:59:35 [scopus_api] INFO: articles_count 864
+2022-10-04 10:59:35 [scopus_api] INFO: 12956
+2022-10-04 10:59:35 [scopus_api] INFO: articles_count 889
+2022-10-04 10:59:35 [scopus_api] INFO: articles_count 914
+2022-10-04 10:59:35 [scopus_api] INFO: articles_count 939
+2022-10-04 10:59:35 [scopus_api] INFO: articles_count 964
+2022-10-04 10:59:35 [scopus_api] INFO: articles_count 989
+2022-10-04 10:59:36 [scopus_api] INFO: articles_count 1014
+2022-10-04 10:59:36 [scopus_api] INFO: articles_count 1039
+2022-10-04 10:59:36 [scopus_api] INFO: articles_count 1064
+2022-10-04 10:59:36 [scopus_api] INFO: articles_count 1089
+2022-10-04 10:59:36 [scopus_api] INFO: articles_count 1114
+2022-10-04 10:59:36 [scopus_api] INFO: articles_count 1139
+2022-10-04 10:59:36 [scopus_api] INFO: articles_count 1164
+2022-10-04 10:59:37 [scopus_api] INFO: articles_count 1189
+2022-10-04 10:59:37 [scopus_api] INFO: articles_count 1214
+2022-10-04 10:59:37 [scopus_api] INFO: articles_count 1239
+2022-10-04 10:59:37 [scopus_api] INFO: articles_count 1264
+2022-10-04 10:59:37 [scopus_api] INFO: articles_count 1289
+2022-10-04 10:59:37 [scopus_api] INFO: articles_count 1314
+2022-10-04 10:59:37 [scopus_api] INFO: articles_count 1322
+2022-10-04 10:59:38 [scopus_api] INFO: articles_count 1347
+2022-10-04 10:59:38 [scopus_api] INFO: articles_count 1372
+2022-10-04 10:59:38 [scopus_api] INFO: articles_count 1397
+2022-10-04 10:59:38 [scopus_api] INFO: articles_count 1422
+2022-10-04 10:59:38 [scopus_api] INFO: articles_count 1447
+2022-10-04 10:59:38 [scopus_api] INFO: articles_count 1472
+2022-10-04 10:59:38 [scopus_api] INFO: articles_count 1497
+2022-10-04 10:59:39 [scopus_api] INFO: articles_count 1522
+2022-10-04 10:59:39 [scopus_api] INFO: articles_count 1547
+2022-10-04 10:59:39 [scopus_api] INFO: articles_count 1572
+2022-10-04 10:59:39 [scopus_api] INFO: articles_count 1597
+2022-10-04 10:59:40 [scopus_api] INFO: articles_count 1622
+2022-10-04 10:59:40 [scopus_api] INFO: articles_count 1647
+2022-10-04 10:59:40 [scopus_api] INFO: articles_count 1672
+2022-10-04 10:59:40 [scopus_api] INFO: articles_count 1697
+2022-10-04 10:59:40 [scopus_api] INFO: articles_count 1722
+2022-10-04 10:59:41 [scopus_api] INFO: articles_count 1747
+2022-10-04 10:59:41 [scopus_api] INFO: articles_count 1772
+2022-10-04 10:59:41 [scopus_api] INFO: articles_count 1797
+2022-10-04 10:59:41 [scopus_api] INFO: articles_count 1822
+2022-10-04 10:59:41 [scopus_api] INFO: articles_count 1847
+2022-10-04 10:59:41 [scopus_api] INFO: articles_count 1872
+2022-10-04 10:59:41 [scopus_api] INFO: articles_count 1897
+2022-10-04 10:59:43 [scopus_api] INFO: articles_count 1922
+2022-10-04 10:59:43 [scopus_api] INFO: articles_count 1947
+2022-10-04 10:59:44 [scopus_api] INFO: articles_count 1972
+2022-10-04 10:59:44 [scopus_api] INFO: articles_count 1997
+2022-10-04 10:59:44 [scopus_api] INFO: articles_count 2022
+2022-10-04 10:59:44 [scopus_api] INFO: articles_count 2047
+2022-10-04 10:59:44 [scopus_api] INFO: articles_count 2072
+2022-10-04 10:59:45 [scopus_api] INFO: articles_count 2097
+2022-10-04 10:59:45 [scopus_api] INFO: articles_count 2122
+2022-10-04 10:59:46 [scopus_api] INFO: articles_count 2147
+2022-10-04 10:59:46 [scopus_api] INFO: articles_count 2172
+2022-10-04 10:59:46 [scopus_api] INFO: articles_count 2197
+2022-10-04 10:59:46 [scopus_api] INFO: articles_count 2222
+2022-10-04 10:59:46 [scopus_api] INFO: articles_count 2247
+2022-10-04 10:59:46 [scopus_api] INFO: articles_count 2272
+2022-10-04 10:59:46 [scopus_api] INFO: articles_count 2297
+2022-10-04 10:59:47 [scopus_api] INFO: articles_count 2322
+2022-10-04 10:59:47 [scopus_api] INFO: articles_count 2347
+2022-10-04 10:59:47 [scopus_api] INFO: articles_count 2372
+2022-10-04 10:59:47 [scopus_api] INFO: articles_count 2397
+2022-10-04 10:59:47 [scopus_api] INFO: articles_count 2422
+2022-10-04 10:59:47 [scopus_api] INFO: articles_count 2447
+2022-10-04 10:59:47 [scopus_api] INFO: articles_count 2472
+2022-10-04 10:59:47 [scopus_api] INFO: articles_count 2497
+2022-10-04 10:59:48 [scopus_api] INFO: articles_count 2522
+2022-10-04 10:59:49 [scopus_api] INFO: articles_count 2547
+2022-10-04 10:59:49 [scopus_api] INFO: articles_count 2572
+2022-10-04 10:59:49 [scopus_api] INFO: articles_count 2597
+2022-10-04 10:59:49 [scopus_api] INFO: articles_count 2622
+2022-10-04 10:59:49 [scopus_api] INFO: articles_count 2647
+2022-10-04 10:59:49 [scopus_api] INFO: articles_count 2672
+2022-10-04 10:59:49 [scopus_api] INFO: articles_count 2697
+2022-10-04 10:59:50 [scopus_api] INFO: articles_count 2722
+2022-10-04 10:59:51 [scopus_api] INFO: articles_count 2747
+2022-10-04 10:59:51 [scopus_api] INFO: articles_count 2772
+2022-10-04 10:59:52 [scopus_api] INFO: articles_count 2797
+2022-10-04 10:59:52 [scopus_api] INFO: articles_count 2822
+2022-10-04 10:59:52 [scopus_api] INFO: articles_count 2847
+2022-10-04 10:59:52 [scopus_api] INFO: articles_count 2872
+2022-10-04 10:59:52 [scopus_api] INFO: articles_count 2897
+2022-10-04 10:59:52 [scopus_api] INFO: articles_count 2922
+2022-10-04 10:59:52 [scopus_api] INFO: articles_count 2947
+2022-10-04 10:59:53 [scopus_api] INFO: articles_count 2972
+2022-10-04 10:59:53 [scopus_api] INFO: articles_count 2997
+2022-10-04 10:59:53 [scopus_api] INFO: articles_count 3022
+2022-10-04 10:59:53 [scopus_api] INFO: articles_count 3047
+2022-10-04 10:59:54 [scopus_api] INFO: articles_count 3072
+2022-10-04 10:59:54 [scopus_api] INFO: articles_count 3097
+2022-10-04 10:59:54 [scopus_api] INFO: articles_count 3122
+2022-10-04 10:59:54 [scopus_api] INFO: articles_count 3147
+2022-10-04 10:59:54 [scopus_api] INFO: articles_count 3172
+2022-10-04 10:59:55 [scopus_api] INFO: articles_count 3197
+2022-10-04 10:59:55 [scopus_api] INFO: articles_count 3222
+2022-10-04 10:59:55 [scopus_api] INFO: articles_count 3247
+2022-10-04 10:59:55 [scopus_api] INFO: articles_count 3272
+2022-10-04 10:59:55 [scopus_api] INFO: articles_count 3297
+2022-10-04 10:59:55 [scopus_api] INFO: articles_count 3322
+2022-10-04 10:59:55 [scopus_api] INFO: articles_count 3347
+2022-10-04 10:59:55 [scopus_api] INFO: articles_count 3372
+2022-10-04 10:59:57 [scopus_api] INFO: articles_count 3397
+2022-10-04 10:59:57 [scopus_api] INFO: articles_count 3422
+2022-10-04 10:59:57 [scopus_api] INFO: articles_count 3447
+2022-10-04 10:59:57 [scopus_api] INFO: articles_count 3472
+2022-10-04 10:59:57 [scopus_api] INFO: articles_count 3497
+2022-10-04 10:59:57 [scopus_api] INFO: articles_count 3522
+2022-10-04 10:59:57 [scopus_api] INFO: articles_count 3547
+2022-10-04 10:59:57 [scopus_api] INFO: articles_count 3572
+2022-10-04 10:59:58 [scopus_api] INFO: articles_count 3597
+2022-10-04 10:59:58 [scopus_api] INFO: articles_count 3621
+2022-10-04 10:59:58 [scopus_api] INFO: articles_count 3646
+2022-10-04 10:59:58 [scopus_api] INFO: articles_count 3671
+2022-10-04 10:59:58 [scopus_api] INFO: articles_count 3696
+2022-10-04 10:59:58 [scopus_api] INFO: articles_count 3721
+2022-10-04 10:59:59 [scopus_api] INFO: articles_count 3746
+2022-10-04 10:59:59 [scopus_api] INFO: articles_count 3771
+2022-10-04 10:59:59 [scopus_api] INFO: articles_count 3796
+2022-10-04 11:00:16 [scopus_api] INFO: articles_count 3821
+2022-10-04 11:00:19 [scopus_api] INFO: articles_count 3842
+2022-10-04 11:00:20 [scopus_api] INFO: articles_count 3867
+2022-10-04 11:00:21 [scopus_api] INFO: articles_count 3892
+2022-10-04 11:00:22 [scopus_api] INFO: articles_count 3917
+2022-10-04 11:00:23 [scrapy.extensions.logstats] INFO: Crawled 169 pages (at 169 pages/min), scraped 3917 items (at 3917 items/min)
+2022-10-04 11:00:23 [scopus_api] INFO: articles_count 3942
+2022-10-04 11:00:25 [scopus_api] INFO: articles_count 3967
+2022-10-04 11:00:26 [scopus_api] INFO: articles_count 3992
+2022-10-04 11:00:27 [scopus_api] INFO: articles_count 4017
+2022-10-04 11:00:28 [scopus_api] INFO: articles_count 4042
+2022-10-04 11:00:28 [scopus_api] INFO: articles_count 4067
+2022-10-04 11:00:28 [scopus_api] INFO: articles_count 4092
+2022-10-04 11:00:30 [scopus_api] INFO: articles_count 4117
+2022-10-04 11:00:30 [scopus_api] INFO: articles_count 4142
+2022-10-04 11:00:31 [scopus_api] INFO: articles_count 4167
+2022-10-04 11:00:31 [scopus_api] INFO: articles_count 4192
+2022-10-04 11:00:31 [scopus_api] INFO: articles_count 4217
+2022-10-04 11:00:31 [scopus_api] INFO: articles_count 4242
+2022-10-04 11:00:32 [scopus_api] INFO: articles_count 4267
+2022-10-04 11:00:33 [scopus_api] INFO: articles_count 4292
+2022-10-04 11:00:33 [scopus_api] INFO: articles_count 4317
+2022-10-04 11:00:33 [scopus_api] INFO: articles_count 4342
+2022-10-04 11:00:33 [scopus_api] INFO: articles_count 4367
+2022-10-04 11:00:33 [scopus_api] INFO: articles_count 4392
+2022-10-04 11:00:34 [scopus_api] INFO: articles_count 4417
+2022-10-04 11:00:34 [scopus_api] INFO: articles_count 4442
+2022-10-04 11:00:34 [scopus_api] INFO: articles_count 4467
+2022-10-04 11:00:35 [scopus_api] INFO: articles_count 4492
+2022-10-04 11:00:35 [scopus_api] INFO: articles_count 4517
+2022-10-04 11:00:35 [scopus_api] INFO: articles_count 4542
+2022-10-04 11:00:35 [scopus_api] INFO: articles_count 4567
+2022-10-04 11:00:36 [scopus_api] INFO: articles_count 4592
+2022-10-04 11:00:36 [scopus_api] INFO: articles_count 4617
+2022-10-04 11:00:36 [scopus_api] INFO: articles_count 4642
+2022-10-04 11:00:36 [scopus_api] INFO: articles_count 4667
+2022-10-04 11:00:36 [scopus_api] INFO: articles_count 4692
+2022-10-04 11:00:36 [scopus_api] INFO: articles_count 4717
+2022-10-04 11:00:37 [scopus_api] INFO: articles_count 4742
+2022-10-04 11:00:37 [scopus_api] INFO: articles_count 4767
+2022-10-04 11:00:37 [scopus_api] INFO: articles_count 4792
+2022-10-04 11:00:38 [scopus_api] INFO: articles_count 4817
+2022-10-04 11:00:38 [scopus_api] INFO: articles_count 4842
+2022-10-04 11:00:38 [scopus_api] INFO: articles_count 4867
+2022-10-04 11:00:38 [scopus_api] INFO: articles_count 4892
+2022-10-04 11:00:38 [scopus_api] INFO: articles_count 4917
+2022-10-04 11:00:39 [scopus_api] INFO: articles_count 4942
+2022-10-04 11:00:39 [scopus_api] INFO: articles_count 4967
+2022-10-04 11:00:39 [scopus_api] INFO: afff total result 14252 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+0+OR+1+OR+2+OR+3+OR+4+OR+5+OR+6%29&date=2022
+2022-10-04 11:00:39 [scopus_api] INFO: articles_count 4992
+2022-10-04 11:00:39 [scopus_api] INFO: articles_count 5017
+2022-10-04 11:00:39 [scopus_api] INFO: articles_count 5042
+2022-10-04 11:00:40 [scopus_api] INFO: articles_count 5067
+2022-10-04 11:00:40 [scopus_api] INFO: articles_count 5092
+2022-10-04 11:00:40 [scopus_api] INFO: articles_count 5117
+2022-10-04 11:00:40 [scopus_api] INFO: articles_count 5142
+2022-10-04 11:00:40 [scopus_api] INFO: articles_count 5167
+2022-10-04 11:00:41 [scopus_api] INFO: articles_count 5192
+2022-10-04 11:00:41 [scopus_api] INFO: articles_count 5217
+2022-10-04 11:00:41 [scopus_api] INFO: articles_count 5242
+2022-10-04 11:00:41 [scopus_api] INFO: articles_count 5267
+2022-10-04 11:00:41 [scopus_api] INFO: articles_count 5292
+2022-10-04 11:00:42 [scopus_api] INFO: articles_count 5317
+2022-10-04 11:00:42 [scopus_api] INFO: articles_count 5342
+2022-10-04 11:00:42 [scopus_api] INFO: articles_count 5367
+2022-10-04 11:00:42 [scopus_api] INFO: articles_count 5392
+2022-10-04 11:00:42 [scopus_api] INFO: afff total result 3319 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+2+OR+3+OR+4+OR+5+OR+6%29&date=2022
+2022-10-04 11:00:42 [scopus_api] INFO: parse_startttttt 3319 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+2+OR+3+OR+4+OR+5+OR+6%29&date=2022
+2022-10-04 11:00:42 [scopus_api] INFO: 16275
+2022-10-04 11:00:42 [scopus_api] INFO: articles_count 5417
+2022-10-04 11:00:43 [scopus_api] INFO: 16275
+2022-10-04 11:00:43 [scopus_api] INFO: articles_count 5442
+2022-10-04 11:00:43 [scopus_api] INFO: afff total result 10933 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+0+OR+1%29&date=2022
+2022-10-04 11:00:43 [scopus_api] INFO: articles_count 5467
+2022-10-04 11:00:43 [scopus_api] INFO: articles_count 5492
+2022-10-04 11:00:43 [scopus_api] INFO: articles_count 5517
+2022-10-04 11:00:43 [scopus_api] INFO: articles_count 5542
+2022-10-04 11:00:43 [scopus_api] INFO: articles_count 5567
+2022-10-04 11:00:44 [scopus_api] INFO: articles_count 5592
+2022-10-04 11:00:44 [scopus_api] INFO: articles_count 5617
+2022-10-04 11:00:44 [scopus_api] INFO: articles_count 5642
+2022-10-04 11:00:44 [scopus_api] INFO: articles_count 5667
+2022-10-04 11:00:44 [scopus_api] INFO: articles_count 5692
+2022-10-04 11:00:45 [scopus_api] INFO: articles_count 5717
+2022-10-04 11:00:45 [scopus_api] INFO: articles_count 5742
+2022-10-04 11:00:45 [scopus_api] INFO: articles_count 5767
+2022-10-04 11:00:45 [scopus_api] INFO: articles_count 5792
+2022-10-04 11:00:46 [scopus_api] INFO: articles_count 5817
+2022-10-04 11:00:46 [scopus_api] INFO: afff total result 2688 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+1%29&date=2022
+2022-10-04 11:00:46 [scopus_api] INFO: parse_startttttt 2688 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+1%29&date=2022
+2022-10-04 11:00:46 [scopus_api] INFO: 18963
+2022-10-04 11:00:46 [scopus_api] INFO: articles_count 5842
+2022-10-04 11:00:46 [scopus_api] INFO: start total result 8245 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+0+%29&date=2022
+2022-10-04 11:00:46 [scopus_api] INFO: parse_access
+2022-10-04 11:00:46 [scopus_api] INFO: articles_count 5867
+2022-10-04 11:00:46 [scopus_api] INFO: articles_count 5886
+2022-10-04 11:00:47 [scopus_api] INFO: articles_count 5911
+2022-10-04 11:00:47 [scopus_api] INFO: 18963
+2022-10-04 11:00:47 [scopus_api] INFO: articles_count 5936
+2022-10-04 11:00:47 [scopus_api] INFO: articles_count 5961
+2022-10-04 11:00:47 [scopus_api] INFO: articles_count 5986
+2022-10-04 11:00:47 [scopus_api] INFO: articles_count 6011
+2022-10-04 11:00:47 [scopus_api] INFO: articles_count 6036
+2022-10-04 11:00:47 [scopus_api] INFO: articles_count 6061
+2022-10-04 11:00:48 [scopus_api] INFO: articles_count 6086
+2022-10-04 11:00:48 [scopus_api] INFO: articles_count 6111
+2022-10-04 11:00:48 [scopus_api] INFO: articles_count 6136
+2022-10-04 11:00:48 [scopus_api] INFO: articles_count 6161
+2022-10-04 11:00:49 [scopus_api] INFO: articles_count 6186
+2022-10-04 11:00:49 [scopus_api] INFO: start total result 4636 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+0+%29+AND+OPENACCESS%28+1+%29&date=2022
+2022-10-04 11:00:49 [scopus_api] INFO: parse_startttttt 4636 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+0+%29+AND+OPENACCESS%28+1+%29&date=2022
+2022-10-04 11:00:49 [scopus_api] INFO: 23599
+2022-10-04 11:00:49 [scopus_api] INFO: articles_count 6211
+2022-10-04 11:00:49 [scopus_api] INFO: articles_count 6236
+2022-10-04 11:00:50 [scopus_api] INFO: start total result 3609 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+0+%29+AND+OPENACCESS%28+0+%29&date=2022
+2022-10-04 11:00:50 [scopus_api] INFO: parse_startttttt 3609 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+re+%29+AND+CITEDBY%28+0+%29+AND+OPENACCESS%28+0+%29&date=2022
+2022-10-04 11:00:50 [scopus_api] INFO: 27208
+2022-10-04 11:00:50 [scopus_api] INFO: articles_count 6261
+2022-10-04 11:00:50 [scopus_api] INFO: articles_count 6286
+2022-10-04 11:00:50 [scopus_api] INFO: 27208
+2022-10-04 11:00:50 [scopus_api] INFO: articles_count 6311
+2022-10-04 11:00:50 [scopus_api] INFO: 27208
+2022-10-04 11:00:50 [scopus_api] INFO: articles_count 6336
+2022-10-04 11:00:50 [scopus_api] INFO: articles_count 6361
+2022-10-04 11:00:51 [scopus_api] INFO: articles_count 6374
+2022-10-04 11:00:51 [scopus_api] INFO: articles_count 6399
+2022-10-04 11:00:51 [scopus_api] INFO: articles_count 6424
+2022-10-04 11:00:51 [scopus_api] INFO: articles_count 6449
+2022-10-04 11:00:51 [scopus_api] INFO: articles_count 6474
+2022-10-04 11:00:52 [scopus_api] INFO: articles_count 6499
+2022-10-04 11:00:52 [scopus_api] INFO: articles_count 6524
+2022-10-04 11:00:52 [scopus_api] INFO: articles_count 6549
+2022-10-04 11:00:52 [scopus_api] INFO: articles_count 6574
+2022-10-04 11:00:52 [scopus_api] INFO: articles_count 6599
+2022-10-04 11:00:53 [scopus_api] INFO: articles_count 6610
+2022-10-04 11:00:53 [scopus_api] INFO: articles_count 6635
+2022-10-04 11:00:54 [scopus_api] INFO: articles_count 6660
+2022-10-04 11:00:54 [scopus_api] INFO: articles_count 6669
+2022-10-04 11:00:54 [scopus_api] INFO: articles_count 6694
+2022-10-04 11:00:54 [scopus_api] INFO: articles_count 6719
+2022-10-04 11:00:54 [scopus_api] INFO: articles_count 6744
+2022-10-04 11:00:55 [scopus_api] INFO: articles_count 6769
+2022-10-04 11:00:55 [scopus_api] INFO: articles_count 6794
+2022-10-04 11:00:55 [scopus_api] INFO: articles_count 6819
+2022-10-04 11:00:55 [scopus_api] INFO: articles_count 6844
+2022-10-04 11:00:55 [scopus_api] INFO: articles_count 6869
+2022-10-04 11:00:56 [scopus_api] INFO: articles_count 6894
+2022-10-04 11:00:56 [scopus_api] INFO: articles_count 6919
+2022-10-04 11:00:56 [scopus_api] INFO: articles_count 6944
+2022-10-04 11:00:56 [scopus_api] INFO: articles_count 6969
+2022-10-04 11:00:56 [scopus_api] INFO: articles_count 6994
+2022-10-04 11:00:57 [scopus_api] INFO: articles_count 7019
+2022-10-04 11:00:57 [scopus_api] INFO: articles_count 7044
+2022-10-04 11:00:57 [scopus_api] INFO: articles_count 7069
+2022-10-04 11:00:57 [scopus_api] INFO: articles_count 7094
+2022-10-04 11:00:57 [scopus_api] INFO: articles_count 7119
+2022-10-04 11:00:57 [scopus_api] INFO: articles_count 7144
+2022-10-04 11:00:58 [scopus_api] INFO: articles_count 7169
+2022-10-04 11:00:58 [scopus_api] INFO: articles_count 7194
+2022-10-04 11:00:58 [scopus_api] INFO: articles_count 7219
+2022-10-04 11:00:58 [scopus_api] INFO: articles_count 7244
+2022-10-04 11:00:58 [scopus_api] INFO: articles_count 7269
+2022-10-04 11:00:59 [scopus_api] INFO: articles_count 7294
+2022-10-04 11:00:59 [scopus_api] INFO: articles_count 7319
+2022-10-04 11:00:59 [scopus_api] INFO: articles_count 7344
+2022-10-04 11:00:59 [scopus_api] INFO: articles_count 7369
+2022-10-04 11:00:59 [scopus_api] INFO: articles_count 7394
+2022-10-04 11:01:00 [scopus_api] INFO: articles_count 7419
+2022-10-04 11:01:01 [scopus_api] INFO: articles_count 7444
+2022-10-04 11:01:01 [scopus_api] INFO: articles_count 7469
+2022-10-04 11:01:01 [scopus_api] INFO: articles_count 7494
+2022-10-04 11:01:01 [scopus_api] INFO: articles_count 7519
+2022-10-04 11:01:01 [scopus_api] INFO: articles_count 7544
+2022-10-04 11:01:01 [scopus_api] INFO: articles_count 7569
+2022-10-04 11:01:01 [scopus_api] INFO: articles_count 7594
+2022-10-04 11:01:02 [scopus_api] INFO: articles_count 7619
+2022-10-04 11:01:02 [scopus_api] INFO: articles_count 7644
+2022-10-04 11:01:03 [scopus_api] INFO: articles_count 7669
+2022-10-04 11:01:03 [scopus_api] INFO: articles_count 7694
+2022-10-04 11:01:03 [scopus_api] INFO: articles_count 7719
+2022-10-04 11:01:03 [scopus_api] INFO: articles_count 7744
+2022-10-04 11:01:03 [scopus_api] INFO: articles_count 7769
+2022-10-04 11:01:03 [scopus_api] INFO: articles_count 7794
+2022-10-04 11:01:03 [scopus_api] INFO: articles_count 7819
+2022-10-04 11:01:04 [scopus_api] INFO: articles_count 7844
+2022-10-04 11:01:04 [scopus_api] INFO: articles_count 7869
+2022-10-04 11:01:04 [scopus_api] INFO: articles_count 7894
+2022-10-04 11:01:04 [scopus_api] INFO: articles_count 7919
+2022-10-04 11:01:04 [scopus_api] INFO: articles_count 7944
+2022-10-04 11:01:04 [scopus_api] INFO: articles_count 7969
+2022-10-04 11:01:04 [scopus_api] INFO: articles_count 7994
+2022-10-04 11:01:05 [scopus_api] INFO: articles_count 8019
+2022-10-04 11:01:05 [scopus_api] INFO: articles_count 8044
+2022-10-04 11:01:05 [scopus_api] INFO: articles_count 8069
+2022-10-04 11:01:05 [scopus_api] INFO: articles_count 8094
+2022-10-04 11:01:06 [scopus_api] INFO: articles_count 8119
+2022-10-04 11:01:06 [scopus_api] INFO: articles_count 8144
+2022-10-04 11:01:06 [scopus_api] INFO: articles_count 8169
+2022-10-04 11:01:06 [scopus_api] INFO: articles_count 8194
+2022-10-04 11:01:06 [scopus_api] INFO: articles_count 8219
+2022-10-04 11:01:06 [scopus_api] INFO: articles_count 8244
+2022-10-04 11:01:07 [scopus_api] INFO: articles_count 8269
+2022-10-04 11:01:07 [scopus_api] INFO: articles_count 8294
+2022-10-04 11:01:07 [scopus_api] INFO: articles_count 8319
+2022-10-04 11:01:07 [scopus_api] INFO: articles_count 8344
+2022-10-04 11:01:07 [scopus_api] INFO: articles_count 8369
+2022-10-04 11:01:07 [scopus_api] INFO: articles_count 8394
+2022-10-04 11:01:07 [scopus_api] INFO: articles_count 8419
+2022-10-04 11:01:07 [scopus_api] INFO: articles_count 8444
+2022-10-04 11:01:08 [scopus_api] INFO: articles_count 8469
+2022-10-04 11:01:08 [scopus_api] INFO: articles_count 8494
+2022-10-04 11:01:08 [scopus_api] INFO: articles_count 8519
+2022-10-04 11:01:08 [scopus_api] INFO: articles_count 8544
+2022-10-04 11:01:08 [scopus_api] INFO: articles_count 8569
+2022-10-04 11:01:09 [scopus_api] INFO: articles_count 8594
+2022-10-04 11:01:09 [scopus_api] INFO: articles_count 8619
+2022-10-04 11:01:09 [scopus_api] INFO: articles_count 8644
+2022-10-04 11:01:09 [scopus_api] INFO: articles_count 8669
+2022-10-04 11:01:09 [scopus_api] INFO: articles_count 8694
+2022-10-04 11:01:09 [scopus_api] INFO: articles_count 8719
+2022-10-04 11:01:10 [scopus_api] INFO: articles_count 8744
+2022-10-04 11:01:10 [scopus_api] INFO: articles_count 8769
+2022-10-04 11:01:10 [scopus_api] INFO: articles_count 8794
+2022-10-04 11:01:10 [scopus_api] INFO: articles_count 8819
+2022-10-04 11:01:10 [scopus_api] INFO: articles_count 8844
+2022-10-04 11:01:10 [scopus_api] INFO: articles_count 8869
+2022-10-04 11:01:11 [scopus_api] INFO: articles_count 8894
+2022-10-04 11:01:12 [scopus_api] INFO: articles_count 8919
+2022-10-04 11:01:12 [scopus_api] INFO: articles_count 8944
+2022-10-04 11:01:12 [scopus_api] INFO: articles_count 8969
+2022-10-04 11:01:12 [scopus_api] INFO: articles_count 8994
+2022-10-04 11:01:12 [scopus_api] INFO: articles_count 9019
+2022-10-04 11:01:13 [scopus_api] INFO: articles_count 9044
+2022-10-04 11:01:13 [scopus_api] INFO: articles_count 9069
+2022-10-04 11:01:13 [scopus_api] INFO: articles_count 9094
+2022-10-04 11:01:13 [scopus_api] INFO: articles_count 9119
+2022-10-04 11:01:14 [scopus_api] INFO: articles_count 9144
+2022-10-04 11:01:14 [scopus_api] INFO: articles_count 9169
+2022-10-04 11:01:14 [scopus_api] INFO: articles_count 9194
+2022-10-04 11:01:14 [scopus_api] INFO: articles_count 9219
+2022-10-04 11:01:14 [scopus_api] INFO: articles_count 9244
+2022-10-04 11:01:14 [scopus_api] INFO: articles_count 9269
+2022-10-04 11:01:14 [scopus_api] INFO: articles_count 9294
+2022-10-04 11:01:15 [scopus_api] INFO: articles_count 9319
+2022-10-04 11:01:15 [scopus_api] INFO: articles_count 9344
+2022-10-04 11:01:15 [scopus_api] INFO: articles_count 9369
+2022-10-04 11:01:15 [scopus_api] INFO: articles_count 9394
+2022-10-04 11:01:15 [scopus_api] INFO: articles_count 9419
+2022-10-04 11:01:15 [scopus_api] INFO: articles_count 9444
+2022-10-04 11:01:16 [scopus_api] INFO: articles_count 9469
+2022-10-04 11:01:16 [scopus_api] INFO: articles_count 9494
+2022-10-04 11:01:16 [scopus_api] INFO: articles_count 9519
+2022-10-04 11:01:16 [scopus_api] INFO: articles_count 9544
+2022-10-04 11:01:16 [scopus_api] INFO: articles_count 9569
+2022-10-04 11:01:17 [scopus_api] INFO: articles_count 9594
+2022-10-04 11:01:17 [scopus_api] INFO: articles_count 9619
+2022-10-04 11:01:17 [scopus_api] INFO: articles_count 9644
+2022-10-04 11:01:17 [scopus_api] INFO: articles_count 9669
+2022-10-04 11:01:17 [scopus_api] INFO: articles_count 9694
+2022-10-04 11:01:17 [scopus_api] INFO: articles_count 9719
+2022-10-04 11:01:18 [scopus_api] INFO: articles_count 9744
+2022-10-04 11:01:18 [scopus_api] INFO: articles_count 9769
+2022-10-04 11:01:18 [scopus_api] INFO: articles_count 9794
+2022-10-04 11:01:18 [scopus_api] INFO: articles_count 9819
+2022-10-04 11:01:19 [scopus_api] INFO: articles_count 9844
+2022-10-04 11:01:19 [scopus_api] INFO: articles_count 9869
+2022-10-04 11:01:19 [scopus_api] INFO: articles_count 9894
+2022-10-04 11:01:19 [scopus_api] INFO: articles_count 9919
+2022-10-04 11:01:19 [scopus_api] INFO: articles_count 9944
+2022-10-04 11:01:19 [scopus_api] INFO: articles_count 9969
+2022-10-04 11:01:20 [scopus_api] INFO: articles_count 9994
+2022-10-04 11:01:20 [scopus_api] INFO: articles_count 10019
+2022-10-04 11:01:20 [scopus_api] INFO: articles_count 10044
+2022-10-04 11:01:21 [scopus_api] INFO: articles_count 10069
+2022-10-04 11:01:22 [scopus_api] INFO: articles_count 10094
+2022-10-04 11:01:22 [scopus_api] INFO: articles_count 10119
+2022-10-04 11:01:22 [scopus_api] INFO: articles_count 10144
+2022-10-04 11:01:22 [scopus_api] INFO: articles_count 10169
+2022-10-04 11:01:22 [scopus_api] INFO: articles_count 10194
+2022-10-04 11:01:22 [scopus_api] INFO: articles_count 10219
+2022-10-04 11:01:22 [scopus_api] INFO: articles_count 10244
+2022-10-04 11:01:22 [scopus_api] INFO: articles_count 10269
+2022-10-04 11:01:22 [scopus_api] INFO: articles_count 10294
+2022-10-04 11:01:23 [scopus_api] INFO: articles_count 10319
+2022-10-04 11:01:23 [scrapy.extensions.logstats] INFO: Crawled 430 pages (at 261 pages/min), scraped 10115 items (at 6198 items/min)
+2022-10-04 11:01:25 [scopus_api] INFO: articles_count 10344
+2022-10-04 11:01:26 [scopus_api] INFO: articles_count 10369
+2022-10-04 11:01:26 [scopus_api] INFO: articles_count 10394
+2022-10-04 11:01:26 [scopus_api] INFO: articles_count 10419
+2022-10-04 11:01:26 [scopus_api] INFO: articles_count 10444
+2022-10-04 11:01:26 [scopus_api] INFO: articles_count 10469
+2022-10-04 11:01:26 [scopus_api] INFO: articles_count 10494
+2022-10-04 11:01:26 [scopus_api] INFO: articles_count 10519
+2022-10-04 11:01:27 [scopus_api] INFO: articles_count 10544
+2022-10-04 11:01:27 [scopus_api] INFO: articles_count 10569
+2022-10-04 11:01:27 [scopus_api] INFO: articles_count 10594
+2022-10-04 11:01:27 [scopus_api] INFO: articles_count 10619
+2022-10-04 11:01:27 [scopus_api] INFO: articles_count 10644
+2022-10-04 11:01:28 [scopus_api] INFO: articles_count 10669
+2022-10-04 11:01:28 [scopus_api] INFO: articles_count 10694
+2022-10-04 11:01:28 [scopus_api] INFO: articles_count 10719
+2022-10-04 11:01:30 [scopus_api] INFO: articles_count 10744
+2022-10-04 11:01:30 [scopus_api] INFO: articles_count 10769
+2022-10-04 11:01:30 [scopus_api] INFO: articles_count 10794
+2022-10-04 11:01:30 [scopus_api] INFO: articles_count 10819
+2022-10-04 11:01:30 [scopus_api] INFO: articles_count 10844
+2022-10-04 11:01:30 [scopus_api] INFO: articles_count 10869
+2022-10-04 11:01:30 [scopus_api] INFO: articles_count 10894
+2022-10-04 11:01:30 [scopus_api] INFO: articles_count 10919
+2022-10-04 11:01:33 [scopus_api] INFO: articles_count 10944
+2022-10-04 11:01:34 [scopus_api] INFO: articles_count 10969
+2022-10-04 11:01:34 [scopus_api] INFO: articles_count 10994
+2022-10-04 11:01:34 [scopus_api] INFO: articles_count 11019
+2022-10-04 11:01:34 [scopus_api] INFO: articles_count 11044
+2022-10-04 11:01:35 [scopus_api] INFO: articles_count 11069
+2022-10-04 11:01:35 [scopus_api] INFO: articles_count 11094
+2022-10-04 11:01:35 [scopus_api] INFO: articles_count 11119
+2022-10-04 11:01:38 [scopus_api] INFO: articles_count 11144
+2022-10-04 11:01:38 [scopus_api] INFO: articles_count 11169
+2022-10-04 11:01:38 [scopus_api] INFO: articles_count 11194
+2022-10-04 11:01:38 [scopus_api] INFO: articles_count 11219
+2022-10-04 11:01:38 [scopus_api] INFO: articles_count 11244
+2022-10-04 11:01:38 [scopus_api] INFO: articles_count 11269
+2022-10-04 11:01:38 [scopus_api] INFO: articles_count 11294
+2022-10-04 11:01:38 [scopus_api] INFO: articles_count 11319
+2022-10-04 11:01:40 [scopus_api] INFO: articles_count 11344
+2022-10-04 11:01:40 [scopus_api] INFO: articles_count 11369
+2022-10-04 11:01:40 [scopus_api] INFO: articles_count 11394
+2022-10-04 11:01:40 [scopus_api] INFO: articles_count 11419
+2022-10-04 11:01:40 [scopus_api] INFO: articles_count 11444
+2022-10-04 11:01:40 [scopus_api] INFO: articles_count 11469
+2022-10-04 11:01:40 [scopus_api] INFO: articles_count 11494
+2022-10-04 11:01:40 [scopus_api] INFO: articles_count 11519
+2022-10-04 11:01:42 [scopus_api] INFO: articles_count 11544
+2022-10-04 11:01:48 [scopus_api] INFO: articles_count 11569
+2022-10-04 11:01:48 [scopus_api] INFO: articles_count 11594
+2022-10-04 11:01:48 [scopus_api] INFO: articles_count 11619
+2022-10-04 11:01:48 [scopus_api] INFO: articles_count 11644
+2022-10-04 11:01:48 [scopus_api] INFO: articles_count 11669
+2022-10-04 11:01:48 [scopus_api] INFO: articles_count 11694
+2022-10-04 11:01:48 [scopus_api] INFO: articles_count 11719
+2022-10-04 11:01:48 [scopus_api] INFO: articles_count 11744
+2022-10-04 11:01:50 [scopus_api] INFO: articles_count 11769
+2022-10-04 11:01:50 [scopus_api] INFO: articles_count 11794
+2022-10-04 11:01:50 [scopus_api] INFO: articles_count 11819
+2022-10-04 11:01:50 [scopus_api] INFO: articles_count 11844
+2022-10-04 11:01:50 [scopus_api] INFO: articles_count 11869
+2022-10-04 11:01:50 [scopus_api] INFO: articles_count 11894
+2022-10-04 11:01:50 [scopus_api] INFO: articles_count 11919
+2022-10-04 11:01:50 [scopus_api] INFO: articles_count 11944
+2022-10-04 11:01:52 [scopus_api] INFO: articles_count 11969
+2022-10-04 11:01:52 [scopus_api] INFO: articles_count 11994
+2022-10-04 11:01:53 [scopus_api] INFO: articles_count 12019
+2022-10-04 11:01:53 [scopus_api] INFO: articles_count 12044
+2022-10-04 11:01:53 [scopus_api] INFO: articles_count 12069
+2022-10-04 11:01:53 [scopus_api] INFO: articles_count 12094
+2022-10-04 11:01:53 [scopus_api] INFO: articles_count 12119
+2022-10-04 11:01:53 [scopus_api] INFO: articles_count 12144
+2022-10-04 11:01:56 [scopus_api] INFO: articles_count 12169
+2022-10-04 11:01:56 [scopus_api] INFO: articles_count 12194
+2022-10-04 11:01:57 [scopus_api] INFO: articles_count 12219
+2022-10-04 11:01:57 [scopus_api] INFO: articles_count 12244
+2022-10-04 11:01:57 [scopus_api] INFO: articles_count 12269
+2022-10-04 11:01:57 [scopus_api] INFO: articles_count 12294
+2022-10-04 11:01:57 [scopus_api] INFO: articles_count 12319
+2022-10-04 11:01:57 [scopus_api] INFO: articles_count 12344
+2022-10-04 11:01:58 [scopus_api] INFO: articles_count 12369
+2022-10-04 11:01:58 [scopus_api] INFO: articles_count 12394
+2022-10-04 11:02:00 [scopus_api] INFO: articles_count 12419
+2022-10-04 11:02:00 [scopus_api] INFO: articles_count 12444
+2022-10-04 11:02:00 [scopus_api] INFO: articles_count 12469
+2022-10-04 11:02:00 [scopus_api] INFO: articles_count 12494
+2022-10-04 11:02:00 [scopus_api] INFO: articles_count 12519
+2022-10-04 11:02:00 [scopus_api] INFO: articles_count 12544
+2022-10-04 11:02:01 [scopus_api] INFO: articles_count 12569
+2022-10-04 11:02:01 [scopus_api] INFO: articles_count 12594
+2022-10-04 11:02:03 [scopus_api] INFO: articles_count 12619
+2022-10-04 11:02:03 [scopus_api] INFO: articles_count 12644
+2022-10-04 11:02:03 [scopus_api] INFO: articles_count 12669
+2022-10-04 11:02:03 [scopus_api] INFO: articles_count 12694
+2022-10-04 11:02:03 [scopus_api] INFO: articles_count 12719
+2022-10-04 11:02:03 [scopus_api] INFO: articles_count 12744
+2022-10-04 11:02:03 [scopus_api] INFO: articles_count 12769
+2022-10-04 11:02:03 [scopus_api] INFO: articles_count 12794
+2022-10-04 11:02:06 [scopus_api] INFO: articles_count 12819
+2022-10-04 11:02:06 [scopus_api] INFO: articles_count 12844
+2022-10-04 11:02:06 [scopus_api] INFO: articles_count 12869
+2022-10-04 11:02:06 [scopus_api] INFO: articles_count 12894
+2022-10-04 11:02:06 [scopus_api] INFO: articles_count 12919
+2022-10-04 11:02:06 [scopus_api] INFO: articles_count 12944
+2022-10-04 11:02:06 [scopus_api] INFO: articles_count 12969
+2022-10-04 11:02:06 [scopus_api] INFO: articles_count 12994
+2022-10-04 11:02:10 [scopus_api] INFO: articles_count 13019
+2022-10-04 11:02:11 [scopus_api] INFO: articles_count 13044
+2022-10-04 11:02:11 [scopus_api] INFO: articles_count 13069
+2022-10-04 11:02:11 [scopus_api] INFO: articles_count 13094
+2022-10-04 11:02:11 [scopus_api] INFO: articles_count 13119
+2022-10-04 11:02:11 [scopus_api] INFO: articles_count 13144
+2022-10-04 11:02:11 [scopus_api] INFO: articles_count 13169
+2022-10-04 11:02:11 [scopus_api] INFO: articles_count 13194
+2022-10-04 11:02:14 [scopus_api] INFO: articles_count 13219
+2022-10-04 11:02:17 [scopus_api] INFO: articles_count 13244
+2022-10-04 11:02:17 [scopus_api] INFO: articles_count 13269
+2022-10-04 11:02:17 [scopus_api] INFO: articles_count 13294
+2022-10-04 11:02:17 [scopus_api] INFO: articles_count 13319
+2022-10-04 11:02:17 [scopus_api] INFO: articles_count 13344
+2022-10-04 11:02:17 [scopus_api] INFO: articles_count 13369
+2022-10-04 11:02:17 [scopus_api] INFO: articles_count 13394
+2022-10-04 11:02:18 [scopus_api] INFO: articles_count 13419
+2022-10-04 11:02:19 [scopus_api] INFO: articles_count 13444
+2022-10-04 11:02:19 [scopus_api] INFO: articles_count 13469
+2022-10-04 11:02:19 [scopus_api] INFO: articles_count 13494
+2022-10-04 11:02:19 [scopus_api] INFO: articles_count 13519
+2022-10-04 11:02:19 [scopus_api] INFO: articles_count 13544
+2022-10-04 11:02:19 [scopus_api] INFO: articles_count 13569
+2022-10-04 11:02:19 [scopus_api] INFO: articles_count 13594
+2022-10-04 11:02:21 [scopus_api] INFO: articles_count 13619
+2022-10-04 11:02:23 [scopus_api] INFO: articles_count 13644
+2022-10-04 11:02:23 [scopus_api] INFO: articles_count 13669
+2022-10-04 11:02:23 [scopus_api] INFO: articles_count 13694
+2022-10-04 11:02:23 [scopus_api] INFO: articles_count 13719
+2022-10-04 11:02:23 [scopus_api] INFO: articles_count 13744
+2022-10-04 11:02:23 [scopus_api] INFO: articles_count 13769
+2022-10-04 11:02:23 [scopus_api] INFO: articles_count 13794
+2022-10-04 11:02:23 [scopus_api] INFO: articles_count 13819
+2022-10-04 11:02:24 [scrapy.extensions.logstats] INFO: Crawled 578 pages (at 148 pages/min), scraped 13177 items (at 3062 items/min)
+2022-10-04 11:02:26 [scopus_api] INFO: articles_count 13844
+2022-10-04 11:02:26 [scopus_api] INFO: articles_count 13869
+2022-10-04 11:02:26 [scopus_api] INFO: articles_count 13894
+2022-10-04 11:02:26 [scopus_api] INFO: articles_count 13919
+2022-10-04 11:02:26 [scopus_api] INFO: articles_count 13944
+2022-10-04 11:02:26 [scopus_api] INFO: articles_count 13969
+2022-10-04 11:02:26 [scopus_api] INFO: articles_count 13994
+2022-10-04 11:02:27 [scopus_api] INFO: articles_count 14019
+2022-10-04 11:02:30 [scopus_api] INFO: articles_count 14044
+2022-10-04 11:02:30 [scopus_api] INFO: articles_count 14069
+2022-10-04 11:02:30 [scopus_api] INFO: articles_count 14094
+2022-10-04 11:02:30 [scopus_api] INFO: articles_count 14119
+2022-10-04 11:02:30 [scopus_api] INFO: articles_count 14144
+2022-10-04 11:02:30 [scopus_api] INFO: articles_count 14169
+2022-10-04 11:02:30 [scopus_api] INFO: articles_count 14194
+2022-10-04 11:02:30 [scopus_api] INFO: articles_count 14219
+2022-10-04 11:02:32 [scopus_api] INFO: articles_count 14244
+2022-10-04 11:02:32 [scopus_api] INFO: articles_count 14269
+2022-10-04 11:02:32 [scopus_api] INFO: articles_count 14294
+2022-10-04 11:02:32 [scopus_api] INFO: articles_count 14319
+2022-10-04 11:02:32 [scopus_api] INFO: articles_count 14344
+2022-10-04 11:02:32 [scopus_api] INFO: articles_count 14369
+2022-10-04 11:02:32 [scopus_api] INFO: articles_count 14394
+2022-10-04 11:02:32 [scopus_api] INFO: articles_count 14419
+2022-10-04 11:02:35 [scopus_api] INFO: articles_count 14444
+2022-10-04 11:02:35 [scopus_api] INFO: articles_count 14469
+2022-10-04 11:02:35 [scopus_api] INFO: articles_count 14494
+2022-10-04 11:02:35 [scopus_api] INFO: articles_count 14519
+2022-10-04 11:02:36 [scopus_api] INFO: articles_count 14544
+2022-10-04 11:02:36 [scopus_api] INFO: articles_count 14569
+2022-10-04 11:02:36 [scopus_api] INFO: articles_count 14594
+2022-10-04 11:02:36 [scopus_api] INFO: articles_count 14619
+2022-10-04 11:02:38 [scopus_api] INFO: articles_count 14644
+2022-10-04 11:02:38 [scopus_api] INFO: articles_count 14669
+2022-10-04 11:02:38 [scopus_api] INFO: articles_count 14694
+2022-10-04 11:02:39 [scopus_api] INFO: articles_count 14719
+2022-10-04 11:02:39 [scopus_api] INFO: articles_count 14744
+2022-10-04 11:02:39 [scopus_api] INFO: articles_count 14769
+2022-10-04 11:02:39 [scopus_api] INFO: articles_count 14794
+2022-10-04 11:02:39 [scopus_api] INFO: articles_count 14819
+2022-10-04 11:02:40 [scopus_api] INFO: articles_count 14844
+2022-10-04 11:02:40 [scopus_api] INFO: articles_count 14869
+2022-10-04 11:02:41 [scopus_api] INFO: articles_count 14894
+2022-10-04 11:02:41 [scopus_api] INFO: articles_count 14919
+2022-10-04 11:02:41 [scopus_api] INFO: articles_count 14944
+2022-10-04 11:02:41 [scopus_api] INFO: articles_count 14969
+2022-10-04 11:02:41 [scopus_api] INFO: articles_count 14994
+2022-10-04 11:02:41 [scopus_api] INFO: articles_count 15019
+2022-10-04 11:02:45 [scopus_api] INFO: articles_count 15044
+2022-10-04 11:02:45 [scopus_api] INFO: articles_count 15069
+2022-10-04 11:02:45 [scopus_api] INFO: articles_count 15094
+2022-10-04 11:02:45 [scopus_api] INFO: articles_count 15119
+2022-10-04 11:02:45 [scopus_api] INFO: articles_count 15144
+2022-10-04 11:02:45 [scopus_api] INFO: articles_count 15169
+2022-10-04 11:02:45 [scopus_api] INFO: articles_count 15194
+2022-10-04 11:02:49 [scopus_api] INFO: articles_count 15219
+2022-10-04 11:02:51 [scopus_api] INFO: articles_count 15244
+2022-10-04 11:02:51 [scopus_api] INFO: articles_count 15269
+2022-10-04 11:02:51 [scopus_api] INFO: articles_count 15294
+2022-10-04 11:02:51 [scopus_api] INFO: articles_count 15319
+2022-10-04 11:02:51 [scopus_api] INFO: articles_count 15344
+2022-10-04 11:02:51 [scopus_api] INFO: articles_count 15369
+2022-10-04 11:02:51 [scopus_api] INFO: articles_count 15394
+2022-10-04 11:02:51 [scopus_api] INFO: articles_count 15419
+2022-10-04 11:02:55 [scopus_api] INFO: articles_count 15444
+2022-10-04 11:02:55 [scopus_api] INFO: articles_count 15469
+2022-10-04 11:02:55 [scopus_api] INFO: articles_count 15494
+2022-10-04 11:02:55 [scopus_api] INFO: articles_count 15519
+2022-10-04 11:02:55 [scopus_api] INFO: articles_count 15544
+2022-10-04 11:02:56 [scopus_api] INFO: articles_count 15569
+2022-10-04 11:02:56 [scopus_api] INFO: articles_count 15594
+2022-10-04 11:02:56 [scopus_api] INFO: articles_count 15619
+2022-10-04 11:02:57 [scopus_api] INFO: articles_count 15644
+2022-10-04 11:02:57 [scopus_api] INFO: articles_count 15669
+2022-10-04 11:02:57 [scopus_api] INFO: articles_count 15694
+2022-10-04 11:02:57 [scopus_api] INFO: articles_count 15719
+2022-10-04 11:02:57 [scopus_api] INFO: articles_count 15744
+2022-10-04 11:02:57 [scopus_api] INFO: articles_count 15769
+2022-10-04 11:02:57 [scopus_api] INFO: articles_count 15794
+2022-10-04 11:02:57 [scopus_api] INFO: articles_count 15819
+2022-10-04 11:03:01 [scopus_api] INFO: articles_count 15844
+2022-10-04 11:03:02 [scopus_api] INFO: articles_count 15869
+2022-10-04 11:03:02 [scopus_api] INFO: articles_count 15894
+2022-10-04 11:03:02 [scopus_api] INFO: articles_count 15919
+2022-10-04 11:03:02 [scopus_api] INFO: articles_count 15944
+2022-10-04 11:03:02 [scopus_api] INFO: articles_count 15969
+2022-10-04 11:03:02 [scopus_api] INFO: articles_count 15994
+2022-10-04 11:03:02 [scopus_api] INFO: articles_count 16019
+2022-10-04 11:03:04 [scopus_api] INFO: articles_count 16044
+2022-10-04 11:03:04 [scopus_api] INFO: articles_count 16069
+2022-10-04 11:03:04 [scopus_api] INFO: articles_count 16094
+2022-10-04 11:03:04 [scopus_api] INFO: articles_count 16119
+2022-10-04 11:03:05 [scopus_api] INFO: articles_count 16144
+2022-10-04 11:03:05 [scopus_api] INFO: articles_count 16169
+2022-10-04 11:03:05 [scopus_api] INFO: articles_count 16194
+2022-10-04 11:03:05 [scopus_api] INFO: articles_count 16219
+2022-10-04 11:03:07 [scopus_api] INFO: articles_count 16244
+2022-10-04 11:03:08 [scopus_api] INFO: articles_count 16269
+2022-10-04 11:03:08 [scopus_api] INFO: articles_count 16294
+2022-10-04 11:03:08 [scopus_api] INFO: articles_count 16319
+2022-10-04 11:03:08 [scopus_api] INFO: articles_count 16344
+2022-10-04 11:03:08 [scopus_api] INFO: articles_count 16369
+2022-10-04 11:03:08 [scopus_api] INFO: articles_count 16394
+2022-10-04 11:03:08 [scopus_api] INFO: articles_count 16419
+2022-10-04 11:03:09 [scopus_api] INFO: articles_count 16444
+2022-10-04 11:03:10 [scopus_api] INFO: articles_count 16469
+2022-10-04 11:03:10 [scopus_api] INFO: articles_count 16494
+2022-10-04 11:03:10 [scopus_api] INFO: articles_count 16519
+2022-10-04 11:03:10 [scopus_api] INFO: articles_count 16544
+2022-10-04 11:03:10 [scopus_api] INFO: articles_count 16569
+2022-10-04 11:03:10 [scopus_api] INFO: articles_count 16594
+2022-10-04 11:03:10 [scopus_api] INFO: articles_count 16619
+2022-10-04 11:03:12 [scopus_api] INFO: articles_count 16644
+2022-10-04 11:03:12 [scopus_api] INFO: articles_count 16669
+2022-10-04 11:03:13 [scopus_api] INFO: articles_count 16694
+2022-10-04 11:03:13 [scopus_api] INFO: articles_count 16719
+2022-10-04 11:03:13 [scopus_api] INFO: articles_count 16744
+2022-10-04 11:03:13 [scopus_api] INFO: articles_count 16769
+2022-10-04 11:03:13 [scopus_api] INFO: articles_count 16794
+2022-10-04 11:03:14 [scopus_api] INFO: articles_count 16819
+2022-10-04 11:03:14 [scopus_api] INFO: articles_count 16844
+2022-10-04 11:03:14 [scopus_api] INFO: articles_count 16869
+2022-10-04 11:03:14 [scopus_api] INFO: articles_count 16894
+2022-10-04 11:03:14 [scopus_api] INFO: articles_count 16919
+2022-10-04 11:03:17 [scopus_api] INFO: articles_count 16944
+2022-10-04 11:03:17 [scopus_api] INFO: articles_count 16969
+2022-10-04 11:03:17 [scopus_api] INFO: articles_count 16994
+2022-10-04 11:03:17 [scopus_api] INFO: articles_count 17019
+2022-10-04 11:03:17 [scopus_api] INFO: articles_count 17044
+2022-10-04 11:03:18 [scopus_api] INFO: articles_count 17069
+2022-10-04 11:03:18 [scopus_api] INFO: articles_count 17094
+2022-10-04 11:03:18 [scopus_api] INFO: articles_count 17119
+2022-10-04 11:03:18 [scopus_api] INFO: articles_count 17144
+2022-10-04 11:03:18 [scopus_api] INFO: articles_count 17169
+2022-10-04 11:03:19 [scopus_api] INFO: articles_count 17194
+2022-10-04 11:03:19 [scopus_api] INFO: articles_count 17219
+2022-10-04 11:03:19 [scopus_api] INFO: articles_count 17244
+2022-10-04 11:03:20 [scopus_api] INFO: articles_count 17269
+2022-10-04 11:03:20 [scopus_api] INFO: articles_count 17294
+2022-10-04 11:03:20 [scopus_api] INFO: articles_count 17319
+2022-10-04 11:03:20 [scopus_api] INFO: articles_count 17344
+2022-10-04 11:03:20 [scopus_api] INFO: articles_count 17369
+2022-10-04 11:03:20 [scopus_api] INFO: articles_count 17394
+2022-10-04 11:03:20 [scopus_api] INFO: articles_count 17419
+2022-10-04 11:03:21 [scopus_api] INFO: articles_count 17444
+2022-10-04 11:03:21 [scopus_api] INFO: articles_count 17469
+2022-10-04 11:03:21 [scopus_api] INFO: articles_count 17494
+2022-10-04 11:03:21 [scopus_api] INFO: articles_count 17519
+2022-10-04 11:03:22 [scopus_api] INFO: articles_count 17544
+2022-10-04 11:03:22 [scopus_api] INFO: articles_count 17569
+2022-10-04 11:03:22 [scopus_api] INFO: articles_count 17594
+2022-10-04 11:03:22 [scopus_api] INFO: articles_count 17619
+2022-10-04 11:03:22 [scopus_api] INFO: articles_count 17644
+2022-10-04 11:03:23 [scopus_api] INFO: articles_count 17669
+2022-10-04 11:03:23 [scopus_api] INFO: articles_count 17694
+2022-10-04 11:03:23 [scopus_api] INFO: articles_count 17719
+2022-10-04 11:03:23 [scopus_api] INFO: articles_count 17744
+2022-10-04 11:03:23 [scrapy.extensions.logstats] INFO: Crawled 729 pages (at 151 pages/min), scraped 17723 items (at 4546 items/min)
+2022-10-04 11:03:23 [scopus_api] INFO: articles_count 17769
+2022-10-04 11:03:23 [scopus_api] INFO: articles_count 17794
+2022-10-04 11:03:23 [scopus_api] INFO: articles_count 17819
+2022-10-04 11:03:24 [scopus_api] INFO: articles_count 17844
+2022-10-04 11:03:24 [scopus_api] INFO: articles_count 17869
+2022-10-04 11:03:24 [scopus_api] INFO: articles_count 17894
+2022-10-04 11:03:24 [scopus_api] INFO: articles_count 17919
+2022-10-04 11:03:24 [scopus_api] INFO: articles_count 17944
+2022-10-04 11:03:24 [scopus_api] INFO: articles_count 17969
+2022-10-04 11:03:24 [scopus_api] INFO: articles_count 17994
+2022-10-04 11:03:25 [scopus_api] INFO: articles_count 18019
+2022-10-04 11:03:25 [scopus_api] INFO: articles_count 18044
+2022-10-04 11:03:25 [scopus_api] INFO: articles_count 18069
+2022-10-04 11:03:25 [scopus_api] INFO: articles_count 18094
+2022-10-04 11:03:25 [scopus_api] INFO: articles_count 18119
+2022-10-04 11:03:25 [scopus_api] INFO: articles_count 18144
+2022-10-04 11:03:26 [scopus_api] INFO: articles_count 18169
+2022-10-04 11:03:26 [scopus_api] INFO: articles_count 18194
+2022-10-04 11:03:26 [scopus_api] INFO: articles_count 18219
+2022-10-04 11:03:26 [scopus_api] INFO: articles_count 18244
+2022-10-04 11:03:26 [scopus_api] INFO: articles_count 18269
+2022-10-04 11:03:26 [scopus_api] INFO: articles_count 18294
+2022-10-04 11:03:26 [scopus_api] INFO: articles_count 18319
+2022-10-04 11:03:27 [scopus_api] INFO: articles_count 18344
+2022-10-04 11:03:27 [scopus_api] INFO: articles_count 18369
+2022-10-04 11:03:27 [scopus_api] INFO: articles_count 18394
+2022-10-04 11:03:27 [scopus_api] INFO: articles_count 18419
+2022-10-04 11:03:27 [scopus_api] INFO: articles_count 18444
+2022-10-04 11:03:27 [scopus_api] INFO: articles_count 18469
+2022-10-04 11:03:28 [scopus_api] INFO: articles_count 18494
+2022-10-04 11:03:28 [scopus_api] INFO: articles_count 18519
+2022-10-04 11:03:28 [scopus_api] INFO: articles_count 18544
+2022-10-04 11:03:28 [scopus_api] INFO: articles_count 18569
+2022-10-04 11:03:28 [scopus_api] INFO: articles_count 18594
+2022-10-04 11:03:28 [scopus_api] INFO: articles_count 18619
+2022-10-04 11:03:29 [scopus_api] INFO: articles_count 18644
+2022-10-04 11:03:29 [scopus_api] INFO: articles_count 18669
+2022-10-04 11:03:29 [scopus_api] INFO: articles_count 18694
+2022-10-04 11:03:29 [scopus_api] INFO: articles_count 18719
+2022-10-04 11:03:29 [scopus_api] INFO: articles_count 18744
+2022-10-04 11:03:29 [scopus_api] INFO: articles_count 18769
+2022-10-04 11:03:29 [scopus_api] INFO: articles_count 18794
+2022-10-04 11:03:30 [scopus_api] INFO: articles_count 18819
+2022-10-04 11:03:30 [scopus_api] INFO: articles_count 18844
+2022-10-04 11:03:30 [scopus_api] INFO: articles_count 18869
+2022-10-04 11:03:30 [scopus_api] INFO: articles_count 18894
+2022-10-04 11:03:30 [scopus_api] INFO: articles_count 18919
+2022-10-04 11:03:31 [scopus_api] INFO: articles_count 18944
+2022-10-04 11:03:31 [scopus_api] INFO: articles_count 18969
+2022-10-04 11:03:31 [scopus_api] INFO: articles_count 18994
+2022-10-04 11:03:31 [scopus_api] INFO: articles_count 19019
+2022-10-04 11:03:31 [scopus_api] INFO: articles_count 19044
+2022-10-04 11:03:31 [scopus_api] INFO: articles_count 19069
+2022-10-04 11:03:32 [scopus_api] INFO: articles_count 19094
+2022-10-04 11:03:32 [scopus_api] INFO: articles_count 19119
+2022-10-04 11:03:32 [scopus_api] INFO: articles_count 19144
+2022-10-04 11:03:32 [scopus_api] INFO: articles_count 19169
+2022-10-04 11:03:32 [scopus_api] INFO: articles_count 19194
+2022-10-04 11:03:32 [scopus_api] INFO: articles_count 19219
+2022-10-04 11:03:32 [scopus_api] INFO: articles_count 19244
+2022-10-04 11:03:33 [scopus_api] INFO: articles_count 19269
+2022-10-04 11:03:33 [scopus_api] INFO: articles_count 19294
+2022-10-04 11:03:33 [scopus_api] INFO: articles_count 19319
+2022-10-04 11:03:33 [scopus_api] INFO: articles_count 19344
+2022-10-04 11:03:33 [scopus_api] INFO: articles_count 19369
+2022-10-04 11:03:34 [scopus_api] INFO: articles_count 19394
+2022-10-04 11:03:34 [scopus_api] INFO: articles_count 19419
+2022-10-04 11:03:34 [scopus_api] INFO: articles_count 19444
+2022-10-04 11:03:34 [scopus_api] INFO: articles_count 19469
+2022-10-04 11:03:34 [scopus_api] INFO: articles_count 19494
+2022-10-04 11:03:34 [scopus_api] INFO: articles_count 19519
+2022-10-04 11:03:34 [scopus_api] INFO: articles_count 19544
+2022-10-04 11:03:35 [scopus_api] INFO: articles_count 19569
+2022-10-04 11:03:35 [scopus_api] INFO: articles_count 19594
+2022-10-04 11:03:35 [scopus_api] INFO: articles_count 19619
+2022-10-04 11:03:35 [scopus_api] INFO: articles_count 19644
+2022-10-04 11:03:35 [scopus_api] INFO: articles_count 19669
+2022-10-04 11:03:36 [scopus_api] INFO: articles_count 19694
+2022-10-04 11:03:36 [scopus_api] INFO: articles_count 19719
+2022-10-04 11:03:36 [scopus_api] INFO: articles_count 19744
+2022-10-04 11:03:36 [scopus_api] INFO: articles_count 19769
+2022-10-04 11:03:36 [scopus_api] INFO: articles_count 19794
+2022-10-04 11:03:36 [scopus_api] INFO: articles_count 19819
+2022-10-04 11:03:37 [scopus_api] INFO: articles_count 19844
+2022-10-04 11:03:37 [scopus_api] INFO: articles_count 19869
+2022-10-04 11:03:37 [scopus_api] INFO: articles_count 19894
+2022-10-04 11:03:37 [scopus_api] INFO: articles_count 19919
+2022-10-04 11:03:37 [scopus_api] INFO: articles_count 19944
+2022-10-04 11:03:37 [scopus_api] INFO: articles_count 19969
+2022-10-04 11:03:37 [scopus_api] INFO: articles_count 19994
+2022-10-04 11:03:38 [scopus_api] INFO: articles_count 20019
+2022-10-04 11:03:38 [scopus_api] INFO: articles_count 20044
+2022-10-04 11:03:38 [scopus_api] INFO: articles_count 20069
+2022-10-04 11:03:39 [scopus_api] INFO: articles_count 20094
+2022-10-04 11:03:39 [scopus_api] INFO: articles_count 20119
+2022-10-04 11:03:39 [scopus_api] INFO: articles_count 20144
+2022-10-04 11:03:39 [scopus_api] INFO: articles_count 20169
+2022-10-04 11:03:39 [scopus_api] INFO: articles_count 20194
+2022-10-04 11:03:39 [scopus_api] INFO: articles_count 20219
+2022-10-04 11:03:39 [scopus_api] INFO: articles_count 20244
+2022-10-04 11:03:40 [scopus_api] INFO: articles_count 20269
+2022-10-04 11:03:40 [scopus_api] INFO: articles_count 20294
+2022-10-04 11:03:40 [scopus_api] INFO: articles_count 20319
+2022-10-04 11:03:41 [scopus_api] INFO: articles_count 20344
+2022-10-04 11:03:41 [scopus_api] INFO: articles_count 20369
+2022-10-04 11:03:41 [scopus_api] INFO: articles_count 20394
+2022-10-04 11:03:41 [scopus_api] INFO: articles_count 20419
+2022-10-04 11:03:41 [scopus_api] INFO: articles_count 20444
+2022-10-04 11:03:41 [scopus_api] INFO: articles_count 20469
+2022-10-04 11:03:42 [scopus_api] INFO: articles_count 20494
+2022-10-04 11:03:42 [scopus_api] INFO: articles_count 20519
+2022-10-04 11:03:42 [scopus_api] INFO: articles_count 20544
+2022-10-04 11:03:42 [scopus_api] INFO: articles_count 20569
+2022-10-04 11:03:43 [scopus_api] INFO: articles_count 20594
+2022-10-04 11:03:43 [scopus_api] INFO: articles_count 20619
+2022-10-04 11:03:43 [scopus_api] INFO: articles_count 20644
+2022-10-04 11:03:43 [scopus_api] INFO: articles_count 20669
+2022-10-04 11:03:44 [scopus_api] INFO: articles_count 20694
+2022-10-04 11:03:44 [scopus_api] INFO: articles_count 20719
+2022-10-04 11:03:44 [scopus_api] INFO: articles_count 20744
+2022-10-04 11:03:45 [scopus_api] INFO: articles_count 20769
+2022-10-04 11:03:45 [scopus_api] INFO: articles_count 20794
+2022-10-04 11:03:45 [scopus_api] INFO: articles_count 20819
+2022-10-04 11:03:45 [scopus_api] INFO: articles_count 20844
+2022-10-04 11:03:46 [scopus_api] INFO: articles_count 20869
+2022-10-04 11:03:46 [scopus_api] INFO: articles_count 20894
+2022-10-04 11:03:46 [scopus_api] INFO: articles_count 20919
+2022-10-04 11:03:46 [scopus_api] INFO: articles_count 20944
+2022-10-04 11:03:46 [scopus_api] INFO: articles_count 20969
+2022-10-04 11:03:46 [scopus_api] INFO: articles_count 20994
+2022-10-04 11:03:47 [scopus_api] INFO: articles_count 21019
+2022-10-04 11:03:47 [scopus_api] INFO: articles_count 21044
+2022-10-04 11:03:47 [scopus_api] INFO: articles_count 21069
+2022-10-04 11:03:47 [scopus_api] INFO: articles_count 21094
+2022-10-04 11:03:47 [scopus_api] INFO: articles_count 21119
+2022-10-04 11:03:48 [scopus_api] INFO: articles_count 21144
+2022-10-04 11:03:48 [scopus_api] INFO: articles_count 21169
+2022-10-04 11:03:48 [scopus_api] INFO: articles_count 21194
+2022-10-04 11:03:48 [scopus_api] INFO: articles_count 21219
+2022-10-04 11:03:48 [scopus_api] INFO: articles_count 21244
+2022-10-04 11:03:49 [scopus_api] INFO: articles_count 21269
+2022-10-04 11:03:49 [scopus_api] INFO: articles_count 21294
+2022-10-04 11:03:49 [scopus_api] INFO: articles_count 21319
+2022-10-04 11:03:49 [scopus_api] INFO: articles_count 21344
+2022-10-04 11:03:49 [scopus_api] INFO: articles_count 21369
+2022-10-04 11:03:49 [scopus_api] INFO: articles_count 21394
+2022-10-04 11:03:49 [scopus_api] INFO: articles_count 21419
+2022-10-04 11:03:50 [scopus_api] INFO: articles_count 21444
+2022-10-04 11:03:51 [scopus_api] INFO: articles_count 21469
+2022-10-04 11:03:51 [scopus_api] INFO: articles_count 21494
+2022-10-04 11:03:51 [scopus_api] INFO: articles_count 21519
+2022-10-04 11:03:51 [scopus_api] INFO: articles_count 21544
+2022-10-04 11:03:51 [scopus_api] INFO: articles_count 21569
+2022-10-04 11:03:51 [scopus_api] INFO: articles_count 21594
+2022-10-04 11:03:51 [scopus_api] INFO: articles_count 21619
+2022-10-04 11:03:52 [scopus_api] INFO: articles_count 21644
+2022-10-04 11:03:53 [scopus_api] INFO: articles_count 21669
+2022-10-04 11:03:53 [scopus_api] INFO: articles_count 21694
+2022-10-04 11:03:53 [scopus_api] INFO: articles_count 21719
+2022-10-04 11:03:53 [scopus_api] INFO: articles_count 21744
+2022-10-04 11:03:53 [scopus_api] INFO: articles_count 21769
+2022-10-04 11:03:53 [scopus_api] INFO: articles_count 21794
+2022-10-04 11:03:53 [scopus_api] INFO: articles_count 21819
+2022-10-04 11:03:53 [scopus_api] INFO: articles_count 21844
+2022-10-04 11:03:54 [scopus_api] INFO: articles_count 21869
+2022-10-04 11:03:54 [scopus_api] INFO: articles_count 21894
+2022-10-04 11:03:54 [scopus_api] INFO: articles_count 21919
+2022-10-04 11:03:54 [scopus_api] INFO: articles_count 21944
+2022-10-04 11:03:55 [scopus_api] INFO: articles_count 21969
+2022-10-04 11:03:55 [scopus_api] INFO: articles_count 21994
+2022-10-04 11:03:55 [scopus_api] INFO: articles_count 22019
+2022-10-04 11:03:55 [scopus_api] INFO: articles_count 22044
+2022-10-04 11:03:56 [scopus_api] INFO: articles_count 22069
+2022-10-04 11:03:56 [scopus_api] INFO: articles_count 22094
+2022-10-04 11:03:56 [scopus_api] INFO: articles_count 22119
+2022-10-04 11:03:56 [scopus_api] INFO: articles_count 22144
+2022-10-04 11:03:56 [scopus_api] INFO: articles_count 22169
+2022-10-04 11:03:56 [scopus_api] INFO: articles_count 22194
+2022-10-04 11:03:56 [scopus_api] INFO: articles_count 22219
+2022-10-04 11:03:56 [scopus_api] INFO: articles_count 22244
+2022-10-04 11:03:58 [scopus_api] INFO: articles_count 22269
+2022-10-04 11:03:58 [scopus_api] INFO: articles_count 22294
+2022-10-04 11:03:58 [scopus_api] INFO: articles_count 22319
+2022-10-04 11:03:58 [scopus_api] INFO: articles_count 22344
+2022-10-04 11:03:58 [scopus_api] INFO: articles_count 22369
+2022-10-04 11:03:58 [scopus_api] INFO: articles_count 22394
+2022-10-04 11:03:58 [scopus_api] INFO: articles_count 22419
+2022-10-04 11:03:58 [scopus_api] INFO: articles_count 22444
+2022-10-04 11:04:00 [scopus_api] INFO: articles_count 22469
+2022-10-04 11:04:00 [scopus_api] INFO: articles_count 22494
+2022-10-04 11:04:00 [scopus_api] INFO: articles_count 22519
+2022-10-04 11:04:00 [scopus_api] INFO: articles_count 22544
+2022-10-04 11:04:00 [scopus_api] INFO: articles_count 22569
+2022-10-04 11:04:00 [scopus_api] INFO: articles_count 22594
+2022-10-04 11:04:00 [scopus_api] INFO: articles_count 22619
+2022-10-04 11:04:00 [scopus_api] INFO: articles_count 22644
+2022-10-04 11:04:01 [scopus_api] INFO: articles_count 22669
+2022-10-04 11:04:01 [scopus_api] INFO: articles_count 22694
+2022-10-04 11:04:01 [scopus_api] INFO: articles_count 22719
+2022-10-04 11:04:01 [scopus_api] INFO: articles_count 22744
+2022-10-04 11:04:01 [scopus_api] INFO: articles_count 22769
+2022-10-04 11:04:01 [scopus_api] INFO: articles_count 22794
+2022-10-04 11:04:01 [scopus_api] INFO: articles_count 22819
+2022-10-04 11:04:01 [scopus_api] INFO: articles_count 22844
+2022-10-04 11:04:03 [scopus_api] INFO: articles_count 22869
+2022-10-04 11:04:03 [scopus_api] INFO: articles_count 22894
+2022-10-04 11:04:03 [scopus_api] INFO: articles_count 22919
+2022-10-04 11:04:03 [scopus_api] INFO: articles_count 22944
+2022-10-04 11:04:03 [scopus_api] INFO: articles_count 22969
+2022-10-04 11:04:03 [scopus_api] INFO: articles_count 22994
+2022-10-04 11:04:03 [scopus_api] INFO: articles_count 23019
+2022-10-04 11:04:03 [scopus_api] INFO: articles_count 23044
+2022-10-04 11:04:04 [scopus_api] INFO: articles_count 23069
+2022-10-04 11:04:05 [scopus_api] INFO: articles_count 23094
+2022-10-04 11:04:05 [scopus_api] INFO: articles_count 23119
+2022-10-04 11:04:05 [scopus_api] INFO: articles_count 23144
+2022-10-04 11:04:05 [scopus_api] INFO: articles_count 23169
+2022-10-04 11:04:05 [scopus_api] INFO: articles_count 23194
+2022-10-04 11:04:05 [scopus_api] INFO: articles_count 23219
+2022-10-04 11:04:05 [scopus_api] INFO: articles_count 23244
+2022-10-04 11:04:05 [scopus_api] INFO: articles_count 23269
+2022-10-04 11:04:06 [scopus_api] INFO: articles_count 23294
+2022-10-04 11:04:06 [scopus_api] INFO: articles_count 23319
+2022-10-04 11:04:06 [scopus_api] INFO: articles_count 23344
+2022-10-04 11:04:07 [scopus_api] INFO: articles_count 23369
+2022-10-04 11:04:07 [scopus_api] INFO: articles_count 23394
+2022-10-04 11:04:07 [scopus_api] INFO: articles_count 23419
+2022-10-04 11:04:07 [scopus_api] INFO: articles_count 23444
+2022-10-04 11:04:07 [scopus_api] INFO: articles_count 23469
+2022-10-04 11:04:08 [scopus_api] INFO: articles_count 23494
+2022-10-04 11:04:08 [scopus_api] INFO: articles_count 23519
+2022-10-04 11:04:08 [scopus_api] INFO: articles_count 23544
+2022-10-04 11:04:08 [scopus_api] INFO: articles_count 23569
+2022-10-04 11:04:08 [scopus_api] INFO: articles_count 23594
+2022-10-04 11:04:08 [scopus_api] INFO: articles_count 23619
+2022-10-04 11:04:08 [scopus_api] INFO: articles_count 23644
+2022-10-04 11:04:09 [scopus_api] INFO: articles_count 23669
+2022-10-04 11:04:09 [scopus_api] INFO: articles_count 23694
+2022-10-04 11:04:09 [scopus_api] INFO: articles_count 23719
+2022-10-04 11:04:09 [scopus_api] INFO: articles_count 23744
+2022-10-04 11:04:10 [scopus_api] INFO: articles_count 23769
+2022-10-04 11:04:10 [scopus_api] INFO: articles_count 23794
+2022-10-04 11:04:10 [scopus_api] INFO: articles_count 23819
+2022-10-04 11:04:10 [scopus_api] INFO: articles_count 23844
+2022-10-04 11:04:10 [scopus_api] INFO: articles_count 23869
+2022-10-04 11:04:11 [scopus_api] INFO: articles_count 23894
+2022-10-04 11:04:11 [scopus_api] INFO: articles_count 23919
+2022-10-04 11:04:11 [scopus_api] INFO: articles_count 23944
+2022-10-04 11:04:11 [scopus_api] INFO: articles_count 23969
+2022-10-04 11:04:11 [scopus_api] INFO: articles_count 23994
+2022-10-04 11:04:11 [scopus_api] INFO: articles_count 24019
+2022-10-04 11:04:11 [scopus_api] INFO: articles_count 24044
+2022-10-04 11:04:11 [scopus_api] INFO: articles_count 24069
+2022-10-04 11:04:12 [scopus_api] INFO: articles_count 24094
+2022-10-04 11:04:12 [scopus_api] INFO: articles_count 24119
+2022-10-04 11:04:12 [scopus_api] INFO: articles_count 24144
+2022-10-04 11:04:12 [scopus_api] INFO: articles_count 24169
+2022-10-04 11:04:12 [scopus_api] INFO: articles_count 24194
+2022-10-04 11:04:12 [scopus_api] INFO: articles_count 24219
+2022-10-04 11:04:12 [scopus_api] INFO: articles_count 24244
+2022-10-04 11:04:13 [scopus_api] INFO: articles_count 24269
+2022-10-04 11:04:13 [scopus_api] INFO: articles_count 24294
+2022-10-04 11:04:13 [scopus_api] INFO: afff total result 185362 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+0+OR+1+OR+2+OR+3+OR+4+OR+5+OR+6+OR+7%29&date=2022
+2022-10-04 11:04:14 [scopus_api] INFO: afff total result 1152 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+8+OR+9+OR+10+OR+11+OR+12+OR+13+OR+14+OR+15+OR+16+OR+17+OR+18+OR+19+OR+20+OR+21+OR+22+OR+23+OR+24%29&date=2022
+2022-10-04 11:04:14 [scopus_api] INFO: parse_startttttt 1152 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+8+OR+9+OR+10+OR+11+OR+12+OR+13+OR+14+OR+15+OR+16+OR+17+OR+18+OR+19+OR+20+OR+21+OR+22+OR+23+OR+24%29&date=2022
+2022-10-04 11:04:14 [scopus_api] INFO: 28360
+2022-10-04 11:04:14 [scopus_api] INFO: articles_count 24319
+2022-10-04 11:04:14 [scopus_api] INFO: articles_count 24344
+2022-10-04 11:04:14 [scopus_api] INFO: articles_count 24369
+2022-10-04 11:04:14 [scopus_api] INFO: articles_count 24394
+2022-10-04 11:04:15 [scopus_api] INFO: articles_count 24419
+2022-10-04 11:04:15 [scopus_api] INFO: articles_count 24444
+2022-10-04 11:04:15 [scopus_api] INFO: articles_count 24469
+2022-10-04 11:04:15 [scopus_api] INFO: articles_count 24494
+2022-10-04 11:04:15 [scopus_api] INFO: articles_count 24519
+2022-10-04 11:04:15 [scopus_api] INFO: articles_count 24544
+2022-10-04 11:04:15 [scopus_api] INFO: articles_count 24569
+2022-10-04 11:04:16 [scopus_api] INFO: articles_count 24594
+2022-10-04 11:04:16 [scopus_api] INFO: articles_count 24619
+2022-10-04 11:04:16 [scopus_api] INFO: 28360
+2022-10-04 11:04:17 [scopus_api] INFO: articles_count 24644
+2022-10-04 11:04:17 [scopus_api] INFO: articles_count 24669
+2022-10-04 11:04:17 [scopus_api] INFO: articles_count 24694
+2022-10-04 11:04:17 [scopus_api] INFO: articles_count 24719
+2022-10-04 11:04:17 [scopus_api] INFO: afff total result 21236 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+OR+3+OR+4+OR+5+OR+6+OR+7%29&date=2022
+2022-10-04 11:04:17 [scopus_api] INFO: afff total result 164126 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+0+OR+1%29&date=2022
+2022-10-04 11:04:17 [scopus_api] INFO: articles_count 24744
+2022-10-04 11:04:17 [scopus_api] INFO: articles_count 24769
+2022-10-04 11:04:18 [scopus_api] INFO: articles_count 24794
+2022-10-04 11:04:18 [scopus_api] INFO: articles_count 24819
+2022-10-04 11:04:18 [scopus_api] INFO: articles_count 24844
+2022-10-04 11:04:18 [scopus_api] INFO: articles_count 24869
+2022-10-04 11:04:18 [scopus_api] INFO: articles_count 24894
+2022-10-04 11:04:18 [scopus_api] INFO: articles_count 24919
+2022-10-04 11:04:18 [scopus_api] INFO: articles_count 24944
+2022-10-04 11:04:18 [scopus_api] INFO: articles_count 24969
+2022-10-04 11:04:19 [scopus_api] INFO: articles_count 24971
+2022-10-04 11:04:19 [scopus_api] INFO: articles_count 24996
+2022-10-04 11:04:19 [scopus_api] INFO: articles_count 25021
+2022-10-04 11:04:19 [scopus_api] INFO: articles_count 25046
+2022-10-04 11:04:20 [scopus_api] INFO: articles_count 25071
+2022-10-04 11:04:20 [scopus_api] INFO: articles_count 25096
+2022-10-04 11:04:20 [scopus_api] INFO: articles_count 25121
+2022-10-04 11:04:22 [scopus_api] INFO: afff total result 30650 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1%29&date=2022
+2022-10-04 11:04:22 [scopus_api] INFO: start total result 133476 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+0+%29&date=2022
+2022-10-04 11:04:22 [scopus_api] INFO: parse_access
+2022-10-04 11:04:23 [scopus_api] INFO: articles_count 25146
+2022-10-04 11:04:23 [scopus_api] INFO: articles_count 25171
+2022-10-04 11:04:23 [scrapy.extensions.logstats] INFO: Crawled 1031 pages (at 302 pages/min), scraped 25141 items (at 7418 items/min)
+2022-10-04 11:04:23 [scopus_api] INFO: articles_count 25196
+2022-10-04 11:04:23 [scopus_api] INFO: afff total result 5138 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+4+OR+5+OR+6+OR+7%29&date=2022
+2022-10-04 11:04:23 [scopus_api] INFO: articles_count 25221
+2022-10-04 11:04:24 [scopus_api] INFO: afff total result 16098 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+OR+3%29&date=2022
+2022-10-04 11:04:24 [scopus_api] INFO: articles_count 25246
+2022-10-04 11:04:24 [scopus_api] INFO: articles_count 25271
+2022-10-04 11:04:24 [scopus_api] INFO: articles_count 25296
+2022-10-04 11:04:24 [scopus_api] INFO: articles_count 25321
+2022-10-04 11:04:24 [scopus_api] INFO: articles_count 25346
+2022-10-04 11:04:24 [scopus_api] INFO: articles_count 25371
+2022-10-04 11:04:25 [scopus_api] INFO: articles_count 25396
+2022-10-04 11:04:25 [scopus_api] INFO: articles_count 25421
+2022-10-04 11:04:25 [scopus_api] INFO: start total result 11177 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29&date=2022
+2022-10-04 11:04:25 [scopus_api] INFO: parse_access
+2022-10-04 11:04:25 [scopus_api] INFO: start total result 66248 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+0+%29+AND+OPENACCESS%28+0+%29&date=2022
+2022-10-04 11:04:25 [scopus_api] INFO: parse_access
+2022-10-04 11:04:26 [scopus_api] INFO: articles_count 25446
+2022-10-04 11:04:26 [scopus_api] INFO: start total result 67228 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+0+%29+AND+OPENACCESS%28+1+%29&date=2022
+2022-10-04 11:04:26 [scopus_api] INFO: parse_access
+2022-10-04 11:04:26 [scopus_api] INFO: articles_count 25471
+2022-10-04 11:04:26 [scopus_api] INFO: start total result 30650 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29&date=2022
+2022-10-04 11:04:26 [scopus_api] INFO: parse_access
+2022-10-04 11:04:27 [scopus_api] INFO: afff total result 2696 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+5+OR+6+OR+7%29&date=2022
+2022-10-04 11:04:27 [scopus_api] INFO: parse_startttttt 2696 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+5+OR+6+OR+7%29&date=2022
+2022-10-04 11:04:27 [scopus_api] INFO: 31056
+2022-10-04 11:04:27 [scopus_api] INFO: articles_count 25496
+2022-10-04 11:04:27 [scopus_api] INFO: 31056
+2022-10-04 11:04:27 [scopus_api] INFO: start total result 11177 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29&date=2022
+2022-10-04 11:04:27 [scopus_api] INFO: parse_access
+2022-10-04 11:04:27 [scopus_api] INFO: articles_count 25521
+2022-10-04 11:04:27 [scopus_api] INFO: afff total result 4921 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+3%29&date=2022
+2022-10-04 11:04:27 [scopus_api] INFO: parse_startttttt 4921 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+3%29&date=2022
+2022-10-04 11:04:27 [scopus_api] INFO: 35977
+2022-10-04 11:04:27 [scopus_api] INFO: articles_count 25546
+2022-10-04 11:04:27 [scopus_api] INFO: afff total result 2442 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+4%29&date=2022
+2022-10-04 11:04:27 [scopus_api] INFO: parse_startttttt 2442 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+4%29&date=2022
+2022-10-04 11:04:27 [scopus_api] INFO: 38419
+2022-10-04 11:04:27 [scopus_api] INFO: articles_count 25571
+2022-10-04 11:04:28 [scopus_api] INFO: articles_count 25596
+2022-10-04 11:04:28 [scopus_api] INFO: articles_count 25621
+2022-10-04 11:04:28 [scopus_api] INFO: articles_count 25646
+2022-10-04 11:04:28 [scopus_api] INFO: articles_count 25671
+2022-10-04 11:04:28 [scopus_api] INFO: articles_count 25696
+2022-10-04 11:04:29 [scopus_api] INFO: articles_count 25721
+2022-10-04 11:04:30 [scopus_api] INFO: articles_count 25746
+2022-10-04 11:04:30 [scopus_api] INFO: articles_count 25771
+2022-10-04 11:04:30 [scopus_api] INFO: parse_authfirst_rec 64652 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+0+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28i+OR+j+OR+k+OR+l+OR+m+OR+n+OR+o+OR+p+OR+q+OR+r+OR+s+OR+t+OR+u+OR+v+OR+w+OR+x+OR+y+OR+z%29&date=2022
+2022-10-04 11:04:30 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:04:30 [scopus_api] INFO: parse_authfirst_rec 56335 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+0+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28a+OR+b+OR+c+OR+d+OR+e+OR+f+OR+g+OR+h%29&date=2022
+2022-10-04 11:04:30 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:04:30 [scopus_api] INFO: start total result 5932 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29&date=2022
+2022-10-04 11:04:30 [scopus_api] INFO: parse_access
+2022-10-04 11:04:31 [scopus_api] INFO: 38419
+2022-10-04 11:04:31 [scopus_api] INFO: start total result 15476 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29&date=2022
+2022-10-04 11:04:31 [scopus_api] INFO: parse_access
+2022-10-04 11:04:31 [scopus_api] INFO: articles_count 25796
+2022-10-04 11:04:31 [scopus_api] INFO: articles_count 25817
+2022-10-04 11:04:32 [scopus_api] INFO: start total result 5932 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29&date=2022
+2022-10-04 11:04:32 [scopus_api] INFO: parse_access
+2022-10-04 11:04:33 [scopus_api] INFO: start total result 5245 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+1+%29&date=2022
+2022-10-04 11:04:33 [scopus_api] INFO: parse_access
+2022-10-04 11:04:34 [scopus_api] INFO: articles_count 25842
+2022-10-04 11:04:34 [scopus_api] INFO: articles_count 25867
+2022-10-04 11:04:34 [scopus_api] INFO: articles_count 25892
+2022-10-04 11:04:34 [scopus_api] INFO: articles_count 25917
+2022-10-04 11:04:34 [scopus_api] INFO: articles_count 25942
+2022-10-04 11:04:34 [scopus_api] INFO: articles_count 25967
+2022-10-04 11:04:35 [scopus_api] INFO: articles_count 25992
+2022-10-04 11:04:36 [scopus_api] INFO: articles_count 26017
+2022-10-04 11:04:38 [scopus_api] INFO: articles_count 26042
+2022-10-04 11:04:38 [scopus_api] INFO: articles_count 26067
+2022-10-04 11:04:38 [scopus_api] INFO: articles_count 26092
+2022-10-04 11:04:38 [scopus_api] INFO: articles_count 26117
+2022-10-04 11:04:38 [scopus_api] INFO: articles_count 26142
+2022-10-04 11:04:38 [scopus_api] INFO: articles_count 26159
+2022-10-04 11:04:38 [scopus_api] INFO: 38419
+2022-10-04 11:04:39 [scopus_api] INFO: articles_count 26184
+2022-10-04 11:04:39 [scopus_api] INFO: articles_count 26209
+2022-10-04 11:04:39 [scopus_api] INFO: articles_count 26234
+2022-10-04 11:04:39 [scopus_api] INFO: articles_count 26259
+2022-10-04 11:04:39 [scopus_api] INFO: articles_count 26284
+2022-10-04 11:04:39 [scopus_api] INFO: articles_count 26309
+2022-10-04 11:04:40 [scopus_api] INFO: articles_count 26334
+2022-10-04 11:04:40 [scopus_api] INFO: articles_count 26359
+2022-10-04 11:04:41 [scopus_api] INFO: articles_count 26384
+2022-10-04 11:04:41 [scopus_api] INFO: articles_count 26409
+2022-10-04 11:04:41 [scopus_api] INFO: articles_count 26434
+2022-10-04 11:04:41 [scopus_api] INFO: articles_count 26459
+2022-10-04 11:04:41 [scopus_api] INFO: articles_count 26484
+2022-10-04 11:04:42 [scopus_api] INFO: articles_count 26509
+2022-10-04 11:04:42 [scopus_api] INFO: articles_count 26534
+2022-10-04 11:04:42 [scopus_api] INFO: articles_count 26559
+2022-10-04 11:04:43 [scopus_api] INFO: articles_count 26584
+2022-10-04 11:04:44 [scopus_api] INFO: articles_count 26605
+2022-10-04 11:04:44 [scopus_api] INFO: articles_count 26630
+2022-10-04 11:04:44 [scopus_api] INFO: articles_count 26655
+2022-10-04 11:04:44 [scopus_api] INFO: articles_count 26680
+2022-10-04 11:04:44 [scopus_api] INFO: articles_count 26705
+2022-10-04 11:04:44 [scopus_api] INFO: articles_count 26730
+2022-10-04 11:04:44 [scopus_api] INFO: articles_count 26755
+2022-10-04 11:04:47 [scopus_api] INFO: articles_count 26780
+2022-10-04 11:04:47 [scopus_api] INFO: articles_count 26805
+2022-10-04 11:04:47 [scopus_api] INFO: articles_count 26830
+2022-10-04 11:04:47 [scopus_api] INFO: articles_count 26855
+2022-10-04 11:04:47 [scopus_api] INFO: articles_count 26880
+2022-10-04 11:04:47 [scopus_api] INFO: articles_count 26905
+2022-10-04 11:04:48 [scopus_api] INFO: articles_count 26930
+2022-10-04 11:04:48 [scopus_api] INFO: articles_count 26955
+2022-10-04 11:04:48 [scopus_api] INFO: articles_count 26980
+2022-10-04 11:04:50 [scopus_api] INFO: articles_count 27005
+2022-10-04 11:04:50 [scopus_api] INFO: articles_count 27030
+2022-10-04 11:04:50 [scopus_api] INFO: articles_count 27055
+2022-10-04 11:04:50 [scopus_api] INFO: articles_count 27080
+2022-10-04 11:04:50 [scopus_api] INFO: articles_count 27105
+2022-10-04 11:04:50 [scopus_api] INFO: articles_count 27130
+2022-10-04 11:04:50 [scopus_api] INFO: articles_count 27155
+2022-10-04 11:04:50 [scopus_api] INFO: articles_count 27180
+2022-10-04 11:04:51 [scopus_api] INFO: articles_count 27205
+2022-10-04 11:04:51 [scopus_api] INFO: articles_count 27230
+2022-10-04 11:04:51 [scopus_api] INFO: articles_count 27255
+2022-10-04 11:04:52 [scopus_api] INFO: articles_count 27280
+2022-10-04 11:04:52 [scopus_api] INFO: articles_count 27305
+2022-10-04 11:04:52 [scopus_api] INFO: articles_count 27330
+2022-10-04 11:04:52 [scopus_api] INFO: articles_count 27355
+2022-10-04 11:04:55 [scopus_api] INFO: articles_count 27380
+2022-10-04 11:04:55 [scopus_api] INFO: articles_count 27405
+2022-10-04 11:04:55 [scopus_api] INFO: articles_count 27430
+2022-10-04 11:04:55 [scopus_api] INFO: articles_count 27455
+2022-10-04 11:04:55 [scopus_api] INFO: articles_count 27480
+2022-10-04 11:04:55 [scopus_api] INFO: articles_count 27505
+2022-10-04 11:04:55 [scopus_api] INFO: articles_count 27530
+2022-10-04 11:04:55 [scopus_api] INFO: articles_count 27555
+2022-10-04 11:04:56 [scopus_api] INFO: articles_count 27580
+2022-10-04 11:04:56 [scopus_api] INFO: articles_count 27605
+2022-10-04 11:04:56 [scopus_api] INFO: articles_count 27630
+2022-10-04 11:04:56 [scopus_api] INFO: articles_count 27655
+2022-10-04 11:04:57 [scopus_api] INFO: articles_count 27680
+2022-10-04 11:04:57 [scopus_api] INFO: articles_count 27705
+2022-10-04 11:04:57 [scopus_api] INFO: articles_count 27730
+2022-10-04 11:04:57 [scopus_api] INFO: articles_count 27755
+2022-10-04 11:04:58 [scopus_api] INFO: articles_count 27780
+2022-10-04 11:04:58 [scopus_api] INFO: articles_count 27805
+2022-10-04 11:04:58 [scopus_api] INFO: articles_count 27830
+2022-10-04 11:04:59 [scopus_api] INFO: articles_count 27855
+2022-10-04 11:04:59 [scopus_api] INFO: articles_count 27880
+2022-10-04 11:04:59 [scopus_api] INFO: articles_count 27905
+2022-10-04 11:04:59 [scopus_api] INFO: articles_count 27930
+2022-10-04 11:04:59 [scopus_api] INFO: articles_count 27955
+2022-10-04 11:05:00 [scopus_api] INFO: articles_count 27980
+2022-10-04 11:05:00 [scopus_api] INFO: articles_count 28005
+2022-10-04 11:05:00 [scopus_api] INFO: articles_count 28030
+2022-10-04 11:05:01 [scopus_api] INFO: articles_count 28055
+2022-10-04 11:05:01 [scopus_api] INFO: articles_count 28080
+2022-10-04 11:05:01 [scopus_api] INFO: articles_count 28105
+2022-10-04 11:05:01 [scopus_api] INFO: articles_count 28130
+2022-10-04 11:05:01 [scopus_api] INFO: articles_count 28155
+2022-10-04 11:05:02 [scopus_api] INFO: articles_count 28180
+2022-10-04 11:05:03 [scopus_api] INFO: articles_count 28205
+2022-10-04 11:05:03 [scopus_api] INFO: articles_count 28230
+2022-10-04 11:05:03 [scopus_api] INFO: articles_count 28255
+2022-10-04 11:05:03 [scopus_api] INFO: articles_count 28280
+2022-10-04 11:05:03 [scopus_api] INFO: articles_count 28305
+2022-10-04 11:05:03 [scopus_api] INFO: articles_count 28330
+2022-10-04 11:05:03 [scopus_api] INFO: articles_count 28355
+2022-10-04 11:05:04 [scopus_api] INFO: articles_count 28380
+2022-10-04 11:05:04 [scopus_api] INFO: articles_count 28405
+2022-10-04 11:05:05 [scopus_api] INFO: articles_count 28430
+2022-10-04 11:05:07 [scopus_api] INFO: articles_count 28455
+2022-10-04 11:05:07 [scopus_api] INFO: articles_count 28480
+2022-10-04 11:05:07 [scopus_api] INFO: articles_count 28505
+2022-10-04 11:05:07 [scopus_api] INFO: articles_count 28530
+2022-10-04 11:05:07 [scopus_api] INFO: articles_count 28555
+2022-10-04 11:05:09 [scopus_api] INFO: articles_count 28580
+2022-10-04 11:05:09 [scopus_api] INFO: articles_count 28605
+2022-10-04 11:05:09 [scopus_api] INFO: articles_count 28630
+2022-10-04 11:05:09 [scopus_api] INFO: articles_count 28655
+2022-10-04 11:05:09 [scopus_api] INFO: articles_count 28680
+2022-10-04 11:05:09 [scopus_api] INFO: articles_count 28705
+2022-10-04 11:05:09 [scopus_api] INFO: articles_count 28730
+2022-10-04 11:05:09 [scopus_api] INFO: articles_count 28755
+2022-10-04 11:05:11 [scopus_api] INFO: articles_count 28780
+2022-10-04 11:05:11 [scopus_api] INFO: articles_count 28805
+2022-10-04 11:05:11 [scopus_api] INFO: articles_count 28830
+2022-10-04 11:05:11 [scopus_api] INFO: articles_count 28855
+2022-10-04 11:05:11 [scopus_api] INFO: articles_count 28880
+2022-10-04 11:05:11 [scopus_api] INFO: articles_count 28905
+2022-10-04 11:05:11 [scopus_api] INFO: articles_count 28930
+2022-10-04 11:05:11 [scopus_api] INFO: articles_count 28955
+2022-10-04 11:05:13 [scopus_api] INFO: articles_count 28980
+2022-10-04 11:05:13 [scopus_api] INFO: articles_count 29005
+2022-10-04 11:05:13 [scopus_api] INFO: articles_count 29030
+2022-10-04 11:05:13 [scopus_api] INFO: articles_count 29055
+2022-10-04 11:05:13 [scopus_api] INFO: articles_count 29080
+2022-10-04 11:05:14 [scopus_api] INFO: articles_count 29105
+2022-10-04 11:05:14 [scopus_api] INFO: articles_count 29130
+2022-10-04 11:05:14 [scopus_api] INFO: articles_count 29155
+2022-10-04 11:05:15 [scopus_api] INFO: articles_count 29180
+2022-10-04 11:05:15 [scopus_api] INFO: articles_count 29205
+2022-10-04 11:05:15 [scopus_api] INFO: articles_count 29230
+2022-10-04 11:05:15 [scopus_api] INFO: articles_count 29255
+2022-10-04 11:05:15 [scopus_api] INFO: articles_count 29280
+2022-10-04 11:05:15 [scopus_api] INFO: articles_count 29305
+2022-10-04 11:05:16 [scopus_api] INFO: articles_count 29330
+2022-10-04 11:05:16 [scopus_api] INFO: articles_count 29355
+2022-10-04 11:05:16 [scopus_api] INFO: articles_count 29380
+2022-10-04 11:05:17 [scopus_api] INFO: articles_count 29405
+2022-10-04 11:05:17 [scopus_api] INFO: articles_count 29430
+2022-10-04 11:05:17 [scopus_api] INFO: articles_count 29455
+2022-10-04 11:05:17 [scopus_api] INFO: articles_count 29480
+2022-10-04 11:05:18 [scopus_api] INFO: articles_count 29505
+2022-10-04 11:05:18 [scopus_api] INFO: articles_count 29530
+2022-10-04 11:05:18 [scopus_api] INFO: articles_count 29555
+2022-10-04 11:05:19 [scopus_api] INFO: articles_count 29580
+2022-10-04 11:05:20 [scopus_api] INFO: articles_count 29605
+2022-10-04 11:05:20 [scopus_api] INFO: articles_count 29630
+2022-10-04 11:05:20 [scopus_api] INFO: articles_count 29655
+2022-10-04 11:05:20 [scopus_api] INFO: articles_count 29680
+2022-10-04 11:05:20 [scopus_api] INFO: articles_count 29705
+2022-10-04 11:05:20 [scopus_api] INFO: articles_count 29730
+2022-10-04 11:05:21 [scopus_api] INFO: articles_count 29755
+2022-10-04 11:05:21 [scopus_api] INFO: articles_count 29780
+2022-10-04 11:05:23 [scopus_api] INFO: articles_count 29805
+2022-10-04 11:05:23 [scopus_api] INFO: articles_count 29830
+2022-10-04 11:05:23 [scopus_api] INFO: articles_count 29855
+2022-10-04 11:05:23 [scopus_api] INFO: articles_count 29880
+2022-10-04 11:05:23 [scopus_api] INFO: articles_count 29905
+2022-10-04 11:05:23 [scopus_api] INFO: start total result 333 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+1+%29+AND+OA%28publisherfree2read%29&date=2022
+2022-10-04 11:05:23 [scopus_api] INFO: parse_startttttt 333 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+1+%29+AND+OA%28publisherfree2read%29&date=2022
+2022-10-04 11:05:23 [scopus_api] INFO: 38752
+2022-10-04 11:05:23 [scopus_api] INFO: articles_count 29930
+2022-10-04 11:05:23 [scopus_api] INFO: start total result 1104 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+1+%29+AND+OA%28publisherhybridgold%29&date=2022
+2022-10-04 11:05:23 [scopus_api] INFO: parse_startttttt 1104 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+1+%29+AND+OA%28publisherhybridgold%29&date=2022
+2022-10-04 11:05:23 [scopus_api] INFO: 39856
+2022-10-04 11:05:23 [scopus_api] INFO: articles_count 29955
+2022-10-04 11:05:24 [scrapy.extensions.logstats] INFO: Crawled 1243 pages (at 212 pages/min), scraped 29579 items (at 4438 items/min)
+2022-10-04 11:05:24 [scopus_api] INFO: start total result 3438 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+1+%29+AND+OA%28publisherfullgold%29&date=2022
+2022-10-04 11:05:24 [scopus_api] INFO: parse_startttttt 3438 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+1+%29+AND+OA%28publisherfullgold%29&date=2022
+2022-10-04 11:05:24 [scopus_api] INFO: 43294
+2022-10-04 11:05:24 [scopus_api] INFO: articles_count 29980
+2022-10-04 11:05:25 [scopus_api] INFO: articles_count 30005
+2022-10-04 11:05:25 [scopus_api] INFO: articles_count 30030
+2022-10-04 11:05:25 [scopus_api] INFO: articles_count 30055
+2022-10-04 11:05:25 [scopus_api] INFO: articles_count 30080
+2022-10-04 11:05:25 [scopus_api] INFO: articles_count 30105
+2022-10-04 11:05:25 [scopus_api] INFO: articles_count 30130
+2022-10-04 11:05:25 [scopus_api] INFO: parse_authfirst_rec 5850 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28i+OR+j+OR+k+OR+l+OR+m+OR+n+OR+o+OR+p+OR+q+OR+r+OR+s+OR+t+OR+u+OR+v+OR+w+OR+x+OR+y+OR+z%29&date=2022
+2022-10-04 11:05:25 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:26 [scopus_api] INFO: parse_authfirst_rec 5167 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28a+OR+b+OR+c+OR+d+OR+e+OR+f+OR+g+OR+h%29&date=2022
+2022-10-04 11:05:26 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:27 [scopus_api] INFO: articles_count 30155
+2022-10-04 11:05:27 [scopus_api] INFO: articles_count 30180
+2022-10-04 11:05:27 [scopus_api] INFO: articles_count 30205
+2022-10-04 11:05:27 [scopus_api] INFO: articles_count 30230
+2022-10-04 11:05:27 [scopus_api] INFO: articles_count 30255
+2022-10-04 11:05:27 [scopus_api] INFO: articles_count 30280
+2022-10-04 11:05:27 [scopus_api] INFO: articles_count 30305
+2022-10-04 11:05:27 [scopus_api] INFO: articles_count 30330
+2022-10-04 11:05:28 [scopus_api] INFO: articles_count 30355
+2022-10-04 11:05:28 [scopus_api] INFO: parse_authfirst_rec 15191 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28i+OR+j+OR+k+OR+l+OR+m+OR+n+OR+o+OR+p+OR+q+OR+r+OR+s+OR+t+OR+u+OR+v+OR+w+OR+x+OR+y+OR+z%29&date=2022
+2022-10-04 11:05:28 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:29 [scopus_api] INFO: articles_count 30380
+2022-10-04 11:05:29 [scopus_api] INFO: articles_count 30405
+2022-10-04 11:05:29 [scopus_api] INFO: articles_count 30430
+2022-10-04 11:05:29 [scopus_api] INFO: articles_count 30455
+2022-10-04 11:05:29 [scopus_api] INFO: articles_count 30480
+2022-10-04 11:05:29 [scopus_api] INFO: parse_authfirst_rec 13483 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28a+OR+b+OR+c+OR+d+OR+e+OR+f+OR+g+OR+h%29&date=2022
+2022-10-04 11:05:29 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:31 [scopus_api] INFO: parse_authfirst_rec 3555 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28e+OR+f+OR+g+OR+h%29&date=2022
+2022-10-04 11:05:31 [scopus_api] INFO: parse_startttttt 3555 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28e+OR+f+OR+g+OR+h%29&date=2022
+2022-10-04 11:05:31 [scopus_api] INFO: 46849
+2022-10-04 11:05:31 [scopus_api] INFO: articles_count 30505
+2022-10-04 11:05:31 [scopus_api] INFO: parse_authfirst_rec 4228 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28a+OR+b+OR+c+OR+d%29&date=2022
+2022-10-04 11:05:31 [scopus_api] INFO: parse_startttttt 4228 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28a+OR+b+OR+c+OR+d%29&date=2022
+2022-10-04 11:05:31 [scopus_api] INFO: 51077
+2022-10-04 11:05:31 [scopus_api] INFO: articles_count 30530
+2022-10-04 11:05:32 [scopus_api] INFO: parse_authfirst_rec 5092 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28r+OR+s+OR+t+OR+u+OR+v+OR+w+OR+x+OR+y+OR+z%29&date=2022
+2022-10-04 11:05:32 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:32 [scopus_api] INFO: parse_authfirst_rec 5337 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28i+OR+j+OR+k+OR+l+OR+m+OR+n+OR+o+OR+p+OR+q%29&date=2022
+2022-10-04 11:05:32 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:32 [scopus_api] INFO: articles_count 30555
+2022-10-04 11:05:32 [scopus_api] INFO: articles_count 30580
+2022-10-04 11:05:32 [scopus_api] INFO: articles_count 30605
+2022-10-04 11:05:32 [scopus_api] INFO: articles_count 30630
+2022-10-04 11:05:32 [scopus_api] INFO: 51077
+2022-10-04 11:05:35 [scopus_api] INFO: articles_count 30655
+2022-10-04 11:05:35 [scopus_api] INFO: articles_count 30680
+2022-10-04 11:05:38 [scopus_api] INFO: articles_count 30705
+2022-10-04 11:05:38 [scopus_api] INFO: articles_count 30730
+2022-10-04 11:05:38 [scopus_api] INFO: articles_count 30755
+2022-10-04 11:05:38 [scopus_api] INFO: articles_count 30780
+2022-10-04 11:05:38 [scopus_api] INFO: articles_count 30805
+2022-10-04 11:05:39 [scopus_api] INFO: parse_authfirst_rec 13883 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28i+OR+j+OR+k+OR+l+OR+m+OR+n+OR+o+OR+p+OR+q%29&date=2022
+2022-10-04 11:05:39 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:41 [scopus_api] INFO: parse_authfirst_rec 9253 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28e+OR+f+OR+g+OR+h%29&date=2022
+2022-10-04 11:05:41 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:41 [scopus_api] INFO: parse_authfirst_rec 10885 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28a+OR+b+OR+c+OR+d%29&date=2022
+2022-10-04 11:05:41 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:44 [scopus_api] INFO: 51077
+2022-10-04 11:05:44 [scopus_api] INFO: 51077
+2022-10-04 11:05:44 [scopus_api] INFO: parse_authfirst_rec 13041 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28r+OR+s+OR+t+OR+u+OR+v+OR+w+OR+x+OR+y+OR+z%29&date=2022
+2022-10-04 11:05:44 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:44 [scopus_api] INFO: articles_count 30830
+2022-10-04 11:05:44 [scopus_api] INFO: articles_count 30855
+2022-10-04 11:05:44 [scopus_api] INFO: articles_count 30880
+2022-10-04 11:05:44 [scopus_api] INFO: articles_count 30905
+2022-10-04 11:05:45 [scopus_api] INFO: articles_count 30930
+2022-10-04 11:05:47 [scopus_api] INFO: parse_authfirst_rec 4021 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28m+OR+n+OR+o+OR+p+OR+q%29&date=2022
+2022-10-04 11:05:47 [scopus_api] INFO: parse_startttttt 4021 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28m+OR+n+OR+o+OR+p+OR+q%29&date=2022
+2022-10-04 11:05:47 [scopus_api] INFO: 55098
+2022-10-04 11:05:47 [scopus_api] INFO: articles_count 30955
+2022-10-04 11:05:47 [scopus_api] INFO: parse_authfirst_rec 4158 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28i+OR+j+OR+k+OR+l%29&date=2022
+2022-10-04 11:05:47 [scopus_api] INFO: parse_startttttt 4158 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+2+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28i+OR+j+OR+k+OR+l%29&date=2022
+2022-10-04 11:05:47 [scopus_api] INFO: 59256
+2022-10-04 11:05:47 [scopus_api] INFO: articles_count 30980
+2022-10-04 11:05:51 [scopus_api] INFO: articles_count 31005
+2022-10-04 11:05:51 [scopus_api] INFO: articles_count 31030
+2022-10-04 11:05:51 [scopus_api] INFO: articles_count 31055
+2022-10-04 11:05:51 [scopus_api] INFO: articles_count 31080
+2022-10-04 11:05:51 [scopus_api] INFO: articles_count 31105
+2022-10-04 11:05:51 [scopus_api] INFO: articles_count 31130
+2022-10-04 11:05:52 [scopus_api] INFO: articles_count 31155
+2022-10-04 11:05:52 [scopus_api] INFO: articles_count 31180
+2022-10-04 11:05:52 [scopus_api] INFO: articles_count 31205
+2022-10-04 11:05:52 [scopus_api] INFO: articles_count 31230
+2022-10-04 11:05:52 [scopus_api] INFO: articles_count 31255
+2022-10-04 11:05:52 [scopus_api] INFO: articles_count 31280
+2022-10-04 11:05:53 [scopus_api] INFO: articles_count 31305
+2022-10-04 11:05:53 [scopus_api] INFO: articles_count 31330
+2022-10-04 11:05:54 [scopus_api] INFO: articles_count 31334
+2022-10-04 11:05:54 [scopus_api] INFO: articles_count 31359
+2022-10-04 11:05:54 [scopus_api] INFO: articles_count 31384
+2022-10-04 11:05:55 [scopus_api] INFO: parse_authfirst_rec 8246 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28v+OR+w+OR+x+OR+y+OR+z%29&date=2022
+2022-10-04 11:05:55 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:55 [scopus_api] INFO: parse_authfirst_rec 9807 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28r+OR+s+OR+t+OR+u%29&date=2022
+2022-10-04 11:05:55 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] not 2:
+2022-10-04 11:05:55 [scopus_api] INFO: articles_count 31409
+2022-10-04 11:05:55 [scopus_api] INFO: articles_count 31434
+2022-10-04 11:05:55 [scopus_api] INFO: articles_count 31459
+2022-10-04 11:05:56 [scopus_api] INFO: articles_count 31484
+2022-10-04 11:05:57 [scopus_api] INFO: articles_count 31509
+2022-10-04 11:05:57 [scopus_api] INFO: articles_count 31534
+2022-10-04 11:05:58 [scopus_api] INFO: articles_count 31559
+2022-10-04 11:05:58 [scopus_api] INFO: articles_count 31584
+2022-10-04 11:05:58 [scopus_api] INFO: articles_count 31609
+2022-10-04 11:05:58 [scopus_api] INFO: articles_count 31634
+2022-10-04 11:05:58 [scopus_api] INFO: articles_count 31659
+2022-10-04 11:05:58 [scopus_api] INFO: articles_count 31684
+2022-10-04 11:05:58 [scopus_api] INFO: 59256
+2022-10-04 11:06:00 [scopus_api] INFO: articles_count 31709
+2022-10-04 11:06:00 [scopus_api] INFO: articles_count 31734
+2022-10-04 11:06:00 [scopus_api] INFO: articles_count 31759
+2022-10-04 11:06:01 [scopus_api] INFO: articles_count 31784
+2022-10-04 11:06:01 [scopus_api] INFO: articles_count 31809
+2022-10-04 11:06:01 [scopus_api] INFO: articles_count 31834
+2022-10-04 11:06:02 [scopus_api] INFO: articles_count 31859
+2022-10-04 11:06:02 [scopus_api] INFO: articles_count 31884
+2022-10-04 11:06:02 [scopus_api] INFO: parse_authfirst_rec 3355 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28t+OR+u%29&date=2022
+2022-10-04 11:06:02 [scopus_api] INFO: parse_startttttt 3355 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28t+OR+u%29&date=2022
+2022-10-04 11:06:02 [scopus_api] INFO: 62611
+2022-10-04 11:06:02 [scopus_api] INFO: articles_count 31909
+2022-10-04 11:06:02 [scopus_api] INFO: parse_authfirst_rec 8480 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28r+OR+s%29&date=2022
+2022-10-04 11:06:02 [scopus_api] INFO: response.meta['rhs_count'] - response.meta['lhs_count'] == 2:
+2022-10-04 11:06:02 [scopus_api] INFO: articles_count 31934
+2022-10-04 11:06:04 [scopus_api] INFO: articles_count 31959
+2022-10-04 11:06:04 [scopus_api] INFO: articles_count 31984
+2022-10-04 11:06:04 [scopus_api] INFO: articles_count 32009
+2022-10-04 11:06:04 [scopus_api] INFO: articles_count 32034
+2022-10-04 11:06:05 [scopus_api] INFO: articles_count 32059
+2022-10-04 11:06:05 [scopus_api] INFO: articles_count 32064
+2022-10-04 11:06:05 [scopus_api] INFO: articles_count 32089
+2022-10-04 11:06:05 [scopus_api] INFO: articles_count 32114
+2022-10-04 11:06:05 [scopus_api] INFO: articles_count 32139
+2022-10-04 11:06:06 [scopus_api] INFO: 62611
+2022-10-04 11:06:06 [scopus_api] INFO: articles_count 32164
+2022-10-04 11:06:07 [scopus_api] INFO: articles_count 32189
+2022-10-04 11:06:07 [scopus_api] INFO: articles_count 32214
+2022-10-04 11:06:07 [scopus_api] INFO: articles_count 32239
+2022-10-04 11:06:07 [scopus_api] INFO: articles_count 32264
+2022-10-04 11:06:07 [scopus_api] INFO: articles_count 32289
+2022-10-04 11:06:07 [scopus_api] INFO: articles_count 32314
+2022-10-04 11:06:07 [scopus_api] INFO: articles_count 32339
+2022-10-04 11:06:09 [scopus_api] INFO: 62611
+2022-10-04 11:06:09 [scopus_api] INFO: parse_volume 4013 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28r%29&date=2022
+2022-10-04 11:06:09 [scopus_api] INFO: parse_startttttt 4013 url https://api.elsevier.com/content/search/scopus?apiKey=64b192ed674a6c372664826c5a5dce03&subj=AGRI&query=DOCTYPE%28+ar+%29+AND+CITEDBY%28+1+%29+AND+OPENACCESS%28+0+%29+AND+AUTHFIRST%28r%29&date=2022
+2022-10-04 11:06:09 [scopus_api] INFO: 66624
+2022-10-04 11:06:09 [scopus_api] INFO: articles_count 32364
+2022-10-04 11:06:10 [scopus_api] INFO: 66624
+2022-10-04 11:06:10 [scopus_api] INFO: articles_count 32389
+2022-10-04 11:06:10 [scopus_api] INFO: articles_count 32414
+2022-10-04 11:06:10 [scopus_api] INFO: articles_count 32439
+2022-10-04 11:06:10 [scopus_api] INFO: articles_count 32464
+2022-10-04 11:06:10 [scopus_api] INFO: articles_count 32489
+2022-10-04 11:06:10 [scopus_api] INFO: articles_count 32514
+2022-10-04 11:06:10 [scopus_api] INFO: articles_count 32539
+2022-10-04 11:06:12 [scopus_api] INFO: articles_count 32564
+2022-10-04 11:06:12 [scopus_api] INFO: articles_count 32567
+2022-10-04 11:06:12 [scopus_api] INFO: articles_count 32592
+2022-10-04 11:06:12 [scopus_api] INFO: articles_count 32617
+2022-10-04 11:06:12 [scopus_api] INFO: articles_count 32642
+2022-10-04 11:06:12 [scopus_api] INFO: articles_count 32667
+2022-10-04 11:06:12 [scopus_api] INFO: articles_count 32692
+2022-10-04 11:06:12 [scopus_api] INFO: articles_count 32717
+2022-10-04 11:06:12 [scopus_api] INFO: 66624
+2022-10-04 11:06:13 [scopus_api] INFO: articles_count 32725
+2022-10-04 11:06:14 [scopus_api] INFO: articles_count 32750
+2022-10-04 11:06:14 [scopus_api] INFO: articles_count 32775
+2022-10-04 11:06:14 [scopus_api] INFO: articles_count 32800
+2022-10-04 11:06:14 [scopus_api] INFO: articles_count 32825
+2022-10-04 11:06:14 [scopus_api] INFO: articles_count 32850
+2022-10-04 11:06:14 [scopus_api] INFO: articles_count 32875
+2022-10-04 11:06:14 [scopus_api] INFO: articles_count 32900
+2022-10-04 11:06:15 [scopus_api] INFO: articles_count 32921
+2022-10-04 11:06:16 [scopus_api] INFO: articles_count 32946
+2022-10-04 11:06:16 [scopus_api] INFO: articles_count 32971
+2022-10-04 11:06:16 [scopus_api] INFO: articles_count 32996
+2022-10-04 11:06:16 [scopus_api] INFO: articles_count 33021
+2022-10-04 11:06:16 [scopus_api] INFO: articles_count 33046
+2022-10-04 11:06:16 [scopus_api] INFO: articles_count 33071
+2022-10-04 11:06:16 [scopus_api] INFO: articles_count 33096
+2022-10-04 11:06:18 [scopus_api] INFO: articles_count 33101
+2022-10-04 11:06:19 [scopus_api] INFO: articles_count 33126
+2022-10-04 11:06:19 [scopus_api] INFO: articles_count 33151
+2022-10-04 11:06:19 [scopus_api] INFO: articles_count 33176
+2022-10-04 11:06:19 [scopus_api] INFO: articles_count 33201
+2022-10-04 11:06:19 [scopus_api] INFO: articles_count 33226
+2022-10-04 11:06:19 [scopus_api] INFO: articles_count 33251
+2022-10-04 11:06:19 [scopus_api] INFO: articles_count 33276
+2022-10-04 11:06:21 [scopus_api] INFO: 66624
+2022-10-04 11:06:21 [scopus_api] INFO: articles_count 33301
+2022-10-04 11:06:22 [scopus_api] INFO: articles_count 33326
+2022-10-04 11:06:22 [scopus_api] INFO: articles_count 33351
+2022-10-04 11:06:22 [scopus_api] INFO: articles_count 33376
+2022-10-04 11:06:22 [scopus_api] INFO: articles_count 33401
+2022-10-04 11:06:22 [scopus_api] INFO: articles_count 33426
+2022-10-04 11:06:22 [scopus_api] INFO: articles_count 33451
+2022-10-04 11:06:22 [scopus_api] INFO: articles_count 33476
+2022-10-04 11:06:23 [scopus_api] INFO: articles_count 33501
+2022-10-04 11:06:23 [scopus_api] INFO: articles_count 33526
+2022-10-04 11:06:23 [scopus_api] INFO: articles_count 33551
+2022-10-04 11:06:23 [scopus_api] INFO: articles_count 33576
+2022-10-04 11:06:23 [scopus_api] INFO: articles_count 33601
+2022-10-04 11:06:23 [scopus_api] INFO: articles_count 33626
+2022-10-04 11:06:23 [scopus_api] INFO: articles_count 33651
+2022-10-04 11:06:24 [scrapy.extensions.logstats] INFO: Crawled 1401 pages (at 158 pages/min), scraped 33036 items (at 3457 items/min)
+2022-10-04 11:06:25 [scopus_api] INFO: articles_count 33676
+2022-10-04 11:06:27 [scopus_api] INFO: articles_count 33701
+2022-10-04 11:06:27 [scopus_api] INFO: articles_count 33726
+2022-10-04 11:06:27 [scopus_api] INFO: articles_count 33751
+2022-10-04 11:06:27 [scopus_api] INFO: articles_count 33776
+2022-10-04 11:06:27 [scopus_api] INFO: articles_count 33801
+2022-10-04 11:06:27 [scopus_api] INFO: articles_count 33826
+2022-10-04 11:06:28 [scopus_api] INFO: articles_count 33851
+2022-10-04 11:06:28 [scopus_api] INFO: articles_count 33864
+2022-10-04 11:06:29 [scopus_api] INFO: articles_count 33889
+2022-10-04 11:06:29 [scopus_api] INFO: articles_count 33914
+2022-10-04 11:06:29 [scopus_api] INFO: articles_count 33939
+2022-10-04 11:06:29 [scopus_api] INFO: articles_count 33964
+2022-10-04 11:06:31 [scopus_api] INFO: articles_count 33989
+2022-10-04 11:06:31 [scopus_api] INFO: articles_count 34014
+2022-10-04 11:06:31 [scopus_api] INFO: articles_count 34039
+2022-10-04 11:06:31 [scopus_api] INFO: articles_count 34064
+2022-10-04 11:06:32 [scopus_api] INFO: articles_count 34089
+2022-10-04 11:06:32 [scopus_api] INFO: articles_count 34114
+2022-10-04 11:06:32 [scopus_api] INFO: articles_count 34139
+2022-10-04 11:06:32 [scopus_api] INFO: articles_count 34164
+2022-10-04 11:06:33 [scopus_api] INFO: articles_count 34189
+2022-10-04 11:06:33 [scopus_api] INFO: articles_count 34214
+2022-10-04 11:06:33 [scopus_api] INFO: articles_count 34239
+2022-10-04 11:06:33 [scopus_api] INFO: articles_count 34264
+2022-10-04 11:06:34 [scopus_api] INFO: articles_count 34289
+2022-10-04 11:06:34 [scopus_api] INFO: articles_count 34314
+2022-10-04 11:06:34 [scopus_api] INFO: articles_count 34339
+2022-10-04 11:06:35 [scopus_api] INFO: articles_count 34364
+2022-10-04 11:06:36 [scopus_api] INFO: articles_count 34389
+2022-10-04 11:06:36 [scopus_api] INFO: articles_count 34414
+2022-10-04 11:06:36 [scopus_api] INFO: articles_count 34439
+2022-10-04 11:06:36 [scopus_api] INFO: articles_count 34464
+2022-10-04 11:06:37 [scopus_api] INFO: articles_count 34489
+2022-10-04 11:06:37 [scopus_api] INFO: articles_count 34514
+2022-10-04 11:06:39 [scopus_api] INFO: articles_count 34539
+2022-10-04 11:06:40 [scopus_api] INFO: articles_count 34564
+2022-10-04 11:06:42 [scopus_api] INFO: articles_count 34589
+2022-10-04 11:06:42 [scopus_api] INFO: articles_count 34614
+2022-10-04 11:06:42 [scopus_api] INFO: articles_count 34639
+2022-10-04 11:06:42 [scopus_api] INFO: articles_count 34664
+2022-10-04 11:06:42 [scopus_api] INFO: articles_count 34689
+2022-10-04 11:06:42 [scopus_api] INFO: articles_count 34714
+2022-10-04 11:06:43 [scopus_api] INFO: articles_count 34739
+2022-10-04 11:06:43 [scopus_api] INFO: articles_count 34764
+2022-10-04 11:06:44 [scopus_api] INFO: articles_count 34789
+2022-10-04 11:06:44 [scopus_api] INFO: articles_count 34814
+2022-10-04 11:06:44 [scopus_api] INFO: articles_count 34839
+2022-10-04 11:06:44 [scopus_api] INFO: articles_count 34864
+2022-10-04 11:06:44 [scopus_api] INFO: articles_count 34889
+2022-10-04 11:06:44 [scopus_api] INFO: articles_count 34914
+2022-10-04 11:06:46 [scopus_api] INFO: articles_count 34939
+2022-10-04 11:06:46 [scopus_api] INFO: articles_count 34964
+2022-10-04 11:06:46 [scopus_api] INFO: articles_count 34989
+2022-10-04 11:06:46 [scopus_api] INFO: articles_count 35014
+2022-10-04 11:06:46 [scopus_api] INFO: articles_count 35039
+2022-10-04 11:06:46 [scopus_api] INFO: articles_count 35064
+2022-10-04 11:06:46 [scopus_api] INFO: articles_count 35089
+2022-10-04 11:06:46 [scopus_api] INFO: articles_count 35114
+2022-10-04 11:06:49 [scopus_api] INFO: articles_count 35139
+2022-10-04 11:06:50 [scopus_api] INFO: articles_count 35164
+2022-10-04 11:06:50 [scopus_api] INFO: articles_count 35189
+2022-10-04 11:06:50 [scopus_api] INFO: articles_count 35214
+2022-10-04 11:06:50 [scopus_api] INFO: articles_count 35239
+2022-10-04 11:06:50 [scopus_api] INFO: articles_count 35264
+2022-10-04 11:06:50 [scopus_api] INFO: articles_count 35289
+2022-10-04 11:06:50 [scopus_api] INFO: articles_count 35314
+2022-10-04 11:06:51 [scopus_api] INFO: articles_count 35339
+2022-10-04 11:06:51 [scopus_api] INFO: articles_count 35364
+2022-10-04 11:06:51 [scopus_api] INFO: articles_count 35389
+2022-10-04 11:06:52 [scopus_api] INFO: articles_count 35414
+2022-10-04 11:06:52 [scopus_api] INFO: articles_count 35439
+2022-10-04 11:06:52 [scopus_api] INFO: articles_count 35464
+2022-10-04 11:06:52 [scopus_api] INFO: articles_count 35489
+2022-10-04 11:06:52 [scopus_api] INFO: articles_count 35514
+2022-10-04 11:06:53 [scopus_api] INFO: articles_count 35539
+2022-10-04 11:06:53 [scopus_api] INFO: articles_count 35564
+2022-10-04 11:06:53 [scopus_api] INFO: articles_count 35589
+2022-10-04 11:06:56 [scopus_api] INFO: articles_count 35614
+2022-10-04 11:06:56 [scopus_api] INFO: articles_count 35639
+2022-10-04 11:06:56 [scopus_api] INFO: articles_count 35664
+2022-10-04 11:06:56 [scopus_api] INFO: articles_count 35689
+2022-10-04 11:06:57 [scopus_api] INFO: articles_count 35714
+2022-10-04 11:06:57 [scopus_api] INFO: articles_count 35739
+2022-10-04 11:06:57 [scopus_api] INFO: articles_count 35764
+2022-10-04 11:06:57 [scopus_api] INFO: articles_count 35789
+2022-10-04 11:06:57 [scopus_api] INFO: articles_count 35814
+2022-10-04 11:06:57 [scopus_api] INFO: articles_count 35839
+2022-10-04 11:06:58 [scopus_api] INFO: articles_count 35864
+2022-10-04 11:06:58 [scopus_api] INFO: articles_count 35889
+2022-10-04 11:07:00 [scopus_api] INFO: articles_count 35914
+2022-10-04 11:07:03 [scopus_api] INFO: articles_count 35939
+2022-10-04 11:07:03 [scopus_api] INFO: articles_count 35964
+2022-10-04 11:07:03 [scopus_api] INFO: articles_count 35989
+2022-10-04 11:07:05 [scopus_api] INFO: articles_count 36014
+2022-10-04 11:07:05 [scopus_api] INFO: articles_count 36039
+2022-10-04 11:07:05 [scopus_api] INFO: articles_count 36064
+2022-10-04 11:07:05 [scopus_api] INFO: articles_count 36089
+2022-10-04 11:07:05 [scopus_api] INFO: articles_count 36114
+2022-10-04 11:07:07 [scopus_api] INFO: articles_count 36139
+2022-10-04 11:07:07 [scopus_api] INFO: articles_count 36164
+2022-10-04 11:07:07 [scopus_api] INFO: articles_count 36189
+2022-10-04 11:07:09 [scopus_api] INFO: articles_count 36214
+2022-10-04 11:07:09 [scopus_api] INFO: articles_count 36239
+2022-10-04 11:07:09 [scopus_api] INFO: articles_count 36264
+2022-10-04 11:07:09 [scopus_api] INFO: articles_count 36289
+2022-10-04 11:07:10 [scopus_api] INFO: articles_count 36314
+2022-10-04 11:07:12 [scopus_api] INFO: articles_count 36339
+2022-10-04 11:07:12 [scopus_api] INFO: articles_count 36364
+2022-10-04 11:07:12 [scopus_api] INFO: articles_count 36389
+2022-10-04 11:07:14 [scopus_api] INFO: articles_count 36414
+2022-10-04 11:07:14 [scopus_api] INFO: articles_count 36439
+2022-10-04 11:07:14 [scopus_api] INFO: articles_count 36464
+2022-10-04 11:07:14 [scopus_api] INFO: articles_count 36489
+2022-10-04 11:07:16 [scopus_api] INFO: articles_count 36514
+2022-10-04 11:07:16 [scopus_api] INFO: articles_count 36539
+2022-10-04 11:07:16 [scopus_api] INFO: articles_count 36564
+2022-10-04 11:07:17 [scopus_api] INFO: articles_count 36589
+2022-10-04 11:07:19 [scopus_api] INFO: articles_count 36614
+2022-10-04 11:07:19 [scopus_api] INFO: articles_count 36639
+2022-10-04 11:07:19 [scopus_api] INFO: articles_count 36664
+2022-10-04 11:07:19 [scopus_api] INFO: articles_count 36689
+2022-10-04 11:07:20 [scopus_api] INFO: articles_count 36714
+2022-10-04 11:07:20 [scopus_api] INFO: articles_count 36739
+2022-10-04 11:07:20 [scopus_api] INFO: articles_count 36764
+2022-10-04 11:07:20 [scopus_api] INFO: articles_count 36789
+2022-10-04 11:07:22 [scopus_api] INFO: articles_count 36814
+2022-10-04 11:07:22 [scopus_api] INFO: articles_count 36839
+2022-10-04 11:07:22 [scopus_api] INFO: articles_count 36864
+2022-10-04 11:07:22 [scopus_api] INFO: articles_count 36889
+2022-10-04 11:07:23 [scopus_api] INFO: articles_count 36914
+2022-10-04 11:07:23 [scopus_api] INFO: articles_count 36939
+2022-10-04 11:07:23 [scopus_api] INFO: articles_count 36964
+2022-10-04 11:07:23 [scopus_api] INFO: articles_count 36989
+2022-10-04 11:07:24 [scrapy.extensions.logstats] INFO: Crawled 1542 pages (at 141 pages/min), scraped 36314 items (at 3278 items/min)
+2022-10-04 11:07:24 [scopus_api] INFO: articles_count 37014
+2022-10-04 11:07:24 [scopus_api] INFO: articles_count 37039
+2022-10-04 11:07:25 [scopus_api] INFO: articles_count 37064
+2022-10-04 11:07:25 [scopus_api] INFO: articles_count 37089
+2022-10-04 11:07:25 [scopus_api] INFO: articles_count 37114
+2022-10-04 11:07:25 [scopus_api] INFO: articles_count 37139
+2022-10-04 11:07:25 [scopus_api] INFO: articles_count 37164
+2022-10-04 11:07:25 [scopus_api] INFO: articles_count 37189
+2022-10-04 11:07:27 [scopus_api] INFO: articles_count 37214
+2022-10-04 11:07:28 [scopus_api] INFO: articles_count 37239
+2022-10-04 11:07:28 [scopus_api] INFO: articles_count 37264
+2022-10-04 11:07:28 [scopus_api] INFO: articles_count 37289
+2022-10-04 11:07:28 [scopus_api] INFO: articles_count 37314
+2022-10-04 11:07:28 [scopus_api] INFO: articles_count 37339
+2022-10-04 11:07:28 [scopus_api] INFO: articles_count 37364
+2022-10-04 11:07:28 [scopus_api] INFO: articles_count 37389
+2022-10-04 11:07:30 [scopus_api] INFO: articles_count 37414
+2022-10-04 11:07:31 [scopus_api] INFO: articles_count 37439
+2022-10-04 11:07:31 [scopus_api] INFO: articles_count 37464
+2022-10-04 11:07:31 [scopus_api] INFO: articles_count 37489
+2022-10-04 11:07:31 [scopus_api] INFO: articles_count 37514
+2022-10-04 11:07:32 [scopus_api] INFO: articles_count 37539
+2022-10-04 11:07:32 [scopus_api] INFO: articles_count 37564
+2022-10-04 11:07:32 [scopus_api] INFO: articles_count 37589
+2022-10-04 11:07:33 [scopus_api] INFO: articles_count 37614
+2022-10-04 11:07:35 [scopus_api] INFO: articles_count 37639
+2022-10-04 11:07:35 [scopus_api] INFO: articles_count 37664
+2022-10-04 11:07:35 [scopus_api] INFO: articles_count 37689
+2022-10-04 11:07:35 [scopus_api] INFO: articles_count 37714
+2022-10-04 11:07:35 [scopus_api] INFO: articles_count 37739
+2022-10-04 11:07:35 [scopus_api] INFO: articles_count 37764
+2022-10-04 11:07:36 [scopus_api] INFO: articles_count 37789
+2022-10-04 11:07:37 [scopus_api] INFO: articles_count 37814
+2022-10-04 11:07:37 [scopus_api] INFO: articles_count 37839
+2022-10-04 11:07:37 [scopus_api] INFO: articles_count 37864
+2022-10-04 11:07:37 [scopus_api] INFO: articles_count 37889
+2022-10-04 11:07:37 [scopus_api] INFO: articles_count 37914
+2022-10-04 11:07:38 [scopus_api] INFO: articles_count 37939
+2022-10-04 11:07:38 [scopus_api] INFO: articles_count 37964
+2022-10-04 11:07:41 [scopus_api] INFO: articles_count 37989
+2022-10-04 11:07:47 [scopus_api] INFO: articles_count 38014
+2022-10-04 11:07:47 [scopus_api] INFO: articles_count 38039
+2022-10-04 11:07:47 [scopus_api] INFO: articles_count 38064
+2022-10-04 11:07:47 [scopus_api] INFO: articles_count 38089
+2022-10-04 11:07:47 [scopus_api] INFO: articles_count 38114
+2022-10-04 11:07:47 [scopus_api] INFO: articles_count 38139
+2022-10-04 11:07:47 [scopus_api] INFO: articles_count 38164
+2022-10-04 11:07:48 [scopus_api] INFO: articles_count 38189
+2022-10-04 11:07:56 [scopus_api] INFO: articles_count 38214
+2022-10-04 11:07:57 [scopus_api] INFO: articles_count 38239
+2022-10-04 11:07:57 [scopus_api] INFO: articles_count 38264
+2022-10-04 11:07:57 [scopus_api] INFO: articles_count 38289
+2022-10-04 11:07:57 [scopus_api] INFO: articles_count 38314
+2022-10-04 11:07:57 [scopus_api] INFO: articles_count 38339
+2022-10-04 11:07:57 [scopus_api] INFO: articles_count 38364
+2022-10-04 11:07:57 [scopus_api] INFO: articles_count 38389
+2022-10-04 11:08:02 [scopus_api] INFO: articles_count 38414
+2022-10-04 11:08:02 [scopus_api] INFO: articles_count 38439
+2022-10-04 11:08:02 [scopus_api] INFO: articles_count 38464
+2022-10-04 11:08:03 [scopus_api] INFO: articles_count 38489
+2022-10-04 11:08:03 [scopus_api] INFO: articles_count 38514
+2022-10-04 11:08:03 [scopus_api] INFO: articles_count 38539
+2022-10-04 11:08:06 [scopus_api] INFO: articles_count 38564
+2022-10-04 11:08:06 [scopus_api] INFO: articles_count 38589
+2022-10-04 11:08:10 [scopus_api] INFO: articles_count 38614
+2022-10-04 11:08:10 [scopus_api] INFO: articles_count 38639
+2022-10-04 11:08:10 [scopus_api] INFO: articles_count 38664
+2022-10-04 11:08:10 [scopus_api] INFO: articles_count 38689
+2022-10-04 11:08:10 [scopus_api] INFO: articles_count 38714
